@@ -32,4 +32,7 @@ if(isset($_POST['send_feedback'])) {
         die("Error : ".mysqli_error($db));
     }
 }
+else {
+    header('location: send-feedback.php');
+}
 ?>

@@ -29,7 +29,8 @@ if(isset($_GET['pid'])) {
     </style>
     <title>RANSPORT MANAGEMENT SYSTEM</title>
 </head>
-<body>
+<body id="bg">
+    <!-- Body content -->
     
 </body>
 </html>

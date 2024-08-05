@@ -15,3 +15,10 @@ if(isset($_GET['id'])) {
     
 </body>
 </html>
+
+    <?php
+}
+else {
+    header('location: payment.php?pid='.$pid);
+}
+?>

@@ -3,6 +3,7 @@ if(isset($_GET['pid'])) {
     $pid = $_GET['pid'];
     ?>
 <?php session_start();?>
+<?php include('connection.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -13,5 +13,8 @@ if(isset($_POST['send_feedback'])) {
     $query1 = mysqli_query($db, $sql1);
 
     if(mysqli_num_rows($query1) > 0) {}
+    else {
+        
+    }
 }
 ?>

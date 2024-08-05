@@ -13,6 +13,9 @@
         html, body {
             font-family: 'Tahoma', sans-serif;
         }
+        .header {
+            box-shadow: 0 1px 3px rgba(2,2,2,0.2);
+        }
     </style>
     <title>TRANSPORT MANAGEMENT SYSTEM</title>
 </head>

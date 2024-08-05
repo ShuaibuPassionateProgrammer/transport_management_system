@@ -3,6 +3,7 @@ if(isset($_GET['id'])) {
     $bid=$_GET['id'];
     ?>
 <?php session_start();?>
+<?php include('connection.php');?>
 
 <!DOCTYPE html>
 <html lang="en">

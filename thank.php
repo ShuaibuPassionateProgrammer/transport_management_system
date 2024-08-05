@@ -83,6 +83,21 @@ if(isset($_GET['id'])) {
         }
     }
     ?>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            
+            <div class="col-md-6 text-left mt-4">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="text-center" colspan="2"><a href="index.php">Back to Homepage</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 

@@ -47,6 +47,42 @@ if(isset($_GET['id'])) {
             </div>
         </div>
     </div>
+
+    <?php
+    $existing_passenger = "SELECT * FROM booking WHERE id = '$bid'";
+    $existing_passenger_run = mysqli_query($db, $existing_passenger);
+
+    if(mysqli_num_rows($existing_passenger_run) > 0) {
+        while($row = mysqli_fetch_assoc($existing_passenger_run)) {
+            ?>
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Full Name</th>
+                                    <th>E-Mail</th>
+                                    <th>Phone</th>
+                                    <th>Bus Booked</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><?=$row['full_name']?></td>
+                                    <td><?=$row['email']?></td>
+                                    <td><?=$row['phone']?></td>
+                                    <td><?=$row['bus_name']?></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <?php
+        }
+    }
+    ?>
 </body>
 </html>
 

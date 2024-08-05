@@ -19,6 +19,9 @@ if(isset($_GET['pid'])) {
         html, body {
             font-family: 'Tahoma', sans-serif;
         }
+        .header {
+            box-shadow: 0 1px 3px rgba(2,2,2,0.2);
+        }
     </style>
     <title>RANSPORT MANAGEMENT SYSTEM</title>
 </head>

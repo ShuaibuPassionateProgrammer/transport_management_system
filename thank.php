@@ -1,5 +1,7 @@
 <?php
-if(isset($_GET['id'])) {}
+if(isset($_GET['id'])) {
+    $bid=$_GET['id'];
+}
 ?>
 
 <!DOCTYPE html>

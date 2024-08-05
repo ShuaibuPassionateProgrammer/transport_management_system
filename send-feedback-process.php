@@ -26,7 +26,7 @@ if(isset($_POST['send_feedback'])) {
     $query2 = mysqli_query($db, $sql2);
 
     if($query2) {
-        //
+        echo '<script>alert("Feedback Sent Successfully");window.location.href="send-feedback.php";</script></div>';
     }
     else {
         die("Error : ".mysqli_error($db));

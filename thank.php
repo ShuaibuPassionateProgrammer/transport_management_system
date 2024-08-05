@@ -1,6 +1,7 @@
 <?php
 if(isset($_GET['id'])) {
     $bid=$_GET['id'];
+    ?><?php
 }
 ?>
 

@@ -24,6 +24,10 @@
     <title>TRANSPORT MANAGEMENT SYSTEM</title>
 </head>
 <body id="bg">
-    
+    <!-- Body content -->
+
+    <div class="header p-4 shadow">
+        <h1 class="text-center">TRANSPORT MANAGEMENT SYSTEM</h1>
+    </div>
 </body>
 </html>

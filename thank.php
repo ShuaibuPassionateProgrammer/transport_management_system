@@ -26,6 +26,27 @@ if(isset($_GET['id'])) {
             </div>
         </div>
     </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <?php
+                if(isset($_SESSION['bookingstatus']))
+                {
+                    ?>
+                    <div class="alert alert-<?php echo $_SESSION['bookingstatus_type']; ?>">
+                        <!-- <strong>Hey </strong> --> <?php echo $_SESSION['bookingstatus']; ?> 
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <?php
+                    unset($_SESSION['bookingstatus']); 
+                }
+                ?>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 

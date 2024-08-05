@@ -2,6 +2,7 @@
 if(isset($_GET['id'])) {
     $bid=$_GET['id'];
     ?>
+<?php session_start();?>
 
 <!DOCTYPE html>
 <html lang="en">

@@ -10,7 +10,9 @@
     <!-- Page level plugin CSS-->
     <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
     <style>
-        
+        html, body {
+            font-family: 'Tahoma', sans-serif;
+        }
     </style>
     <title>TRANSPORT MANAGEMENT SYSTEM</title>
 </head>

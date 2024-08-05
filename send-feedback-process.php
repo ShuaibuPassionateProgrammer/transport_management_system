@@ -23,5 +23,6 @@ if(isset($_POST['send_feedback'])) {
 
     $bookingid1 = $bookingid;
     $sql2 = "INSERT INTO feedback SET booking_id = $bookingid1, fullname = '$full_name', email = '$email', phone = '$phone', subject = '$subject', message = '$message'";
+    $query2 = mysqli_query($db, $sql2);
 }
 ?>

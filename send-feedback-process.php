@@ -14,7 +14,7 @@ if(isset($_POST['send_feedback'])) {
 
     if(mysqli_num_rows($query1) > 0) {}
     else {
-        
+        echo "<script>alert('No Booking Found')</script>";
     }
 }
 ?>

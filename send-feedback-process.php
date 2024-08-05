@@ -13,7 +13,9 @@ if(isset($_POST['send_feedback'])) {
     $query1 = mysqli_query($db, $sql1);
 
     if(mysqli_num_rows($query1) > 0) {
-        while ($row=mysqli_fetch_assoc($query1)) {}
+        while ($row=mysqli_fetch_assoc($query1)) {
+            $bookingid = $row["id"];
+        }
     }
     else {
         echo "<script>alert('No Booking Found')</script>";

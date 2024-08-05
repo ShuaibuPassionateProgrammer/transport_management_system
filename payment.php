@@ -2,6 +2,7 @@
 if(isset($_GET['pid'])) {
     $pid = $_GET['pid'];
     ?>
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

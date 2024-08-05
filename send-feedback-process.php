@@ -20,5 +20,8 @@ if(isset($_POST['send_feedback'])) {
     else {
         echo "<script>alert('No Booking Found')</script>";
     }
+
+    $bookingid1 = $bookingid;
+    $sql2 = "INSERT INTO feedback SET booking_id = $bookingid1, fullname = '$full_name', email = '$email', phone = '$phone', subject = '$subject', message = '$message'";
 }
 ?>

@@ -29,7 +29,7 @@ if(isset($_POST['send_feedback'])) {
         //
     }
     else {
-        
+        die("Error : ".mysqli_error($db));
     }
 }
 ?>

@@ -23,7 +23,7 @@
     </style>
     <title>TRANSPORT MANAGEMENT SYSTEM</title>
 </head>
-<body>
+<body id="bg">
     
 </body>
 </html>

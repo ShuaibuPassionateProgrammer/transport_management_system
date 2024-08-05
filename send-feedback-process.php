@@ -10,5 +10,6 @@ if(isset($_POST['send_feedback'])) {
 
     // Insert into feedback table
     $sql1 = "SELECT * FROM booking";
+    $query1 = mysqli_query($db, $sql1);
 }
 ?>

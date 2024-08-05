@@ -7,5 +7,8 @@ if(isset($_POST['send_feedback'])) {
     $phone = $_POST['phone'];
     $subject = $_POST['subject'];
     $message = $_POST['message'];
+
+    // Insert into feedback table
+    $sql1 = "SELECT * FROM booking";
 }
 ?>

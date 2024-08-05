@@ -17,7 +17,15 @@ if(isset($_GET['id'])) {
     <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card header text-center p-4 bg-dark text-light"><h2>Thank You</h2></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 

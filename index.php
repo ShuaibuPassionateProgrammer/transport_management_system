@@ -29,5 +29,24 @@
     <div class="header p-4 shadow">
         <h1 class="text-center">TRANSPORT MANAGEMENT SYSTEM</h1>
     </div>
+
+    <div class="container pt-3 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <img src="image/deluxe-bg.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-6 pt-3 text-center">
+                <h1>TRANSPORT MANAGEMENT SYSTEM</h1>
+                <p class="text-muted">Welcome to TRANSPORT MANAGEMENT SYSTEM</p>
+                <p class="pt-4">
+                    <a href="vehicle-booking.php" class="btn btn-primary">Book a Vehicle</a>
+                    <a href="send-feedback.php" class="btn btn-primary mr-2">Send Feed Back</a>
+                </p>
+                <p>
+                    <a href="view-feedback-reply.php" class="btn btn-primary w-50">View Feed Back Reply</a>
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

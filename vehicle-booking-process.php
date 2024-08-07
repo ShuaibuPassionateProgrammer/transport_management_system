@@ -15,6 +15,7 @@ if(isset($_POST['book_vehicle'])) {
     $departure = $_POST['departure'];
     $location = $_POST['location'];
 
+    
 }
 else {
     header('location: vehicle-booking.php');

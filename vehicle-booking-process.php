@@ -27,6 +27,7 @@ if(isset($_POST['book_vehicle'])) {
             $pfname = $_SESSION['pid'];
             
             $existing_passenger = "SELECT * FROM booking WHERE full_name = '$pfname'";
+            $existing_passenger_run = mysqli_query($db, $existing_passenger);
         }
         else {
             echo "<script>alert('Booking failed!')</script>";

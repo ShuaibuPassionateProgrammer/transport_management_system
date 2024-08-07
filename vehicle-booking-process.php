@@ -23,6 +23,9 @@ if(isset($_POST['book_vehicle'])) {
         $query = mysqli_query($db, $sql);
 
         if($query) {}
+        else {
+            echo "<script>alert('Booking failed!')</script>";
+        }
     }
 }
 else {

@@ -19,7 +19,7 @@ if(isset($_POST['book_vehicle'])) {
         echo "<span style='background-color: #dc3545; color: #fafafa; padding: 2%; margin: 0 auto; width: 100%;'>All fields should not be blank/empty!</span>";
     }
     else {
-        
+        $sql = "INSERT INTO booking SET full_name = '$full_name', email = '$email', phone = '$phone', bus_name = '$bus_name', bus_type = '$bus_type', /*route_start = '$route_start', route_finish = '$route_finish',*/ fair = '$fair', arrival = '$arrival', departure = '$departure', location = '$location', paymentstatus='pending', bookingstatus='pending'";
     }
 }
 else {

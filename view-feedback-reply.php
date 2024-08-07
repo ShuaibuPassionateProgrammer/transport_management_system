@@ -19,6 +19,10 @@
         .header {
             box-shadow: 0 1px 3px rgba(2,2,2,0.2);
         }
+        .img-responsive {
+            height: 100%;
+            width: 100%;
+        }
     </style>
 </head>
 <body>

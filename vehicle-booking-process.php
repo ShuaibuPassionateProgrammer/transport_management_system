@@ -34,6 +34,8 @@ if(isset($_POST['book_vehicle'])) {
                 $pid = $row['id'];
                 $pname = $row['full_name'];
             }
+
+            header('location: payment.php?pid='.$pid);
         }
         else {
             echo "<script>alert('Booking failed!')</script>";

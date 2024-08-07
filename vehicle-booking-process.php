@@ -22,7 +22,10 @@ if(isset($_POST['book_vehicle'])) {
         $sql = "INSERT INTO booking SET full_name = '$full_name', email = '$email', phone = '$phone', bus_name = '$bus_name', bus_type = '$bus_type', /*route_start = '$route_start', route_finish = '$route_finish',*/ fair = '$fair', arrival = '$arrival', departure = '$departure', location = '$location', paymentstatus='pending', bookingstatus='pending'";
         $query = mysqli_query($db, $sql);
 
-        if($query) {}
+        if($query) {
+            $_SESSION['pid'] = $full_name;
+            $pfname = $_SESSION['pid'];
+        }
         else {
             echo "<script>alert('Booking failed!')</script>";
         }

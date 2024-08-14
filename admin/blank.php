@@ -20,7 +20,6 @@
     <?php include'header.php'; ?>
     
     <div id="content-wrapper">
-
         <div class="container-fluid">
 
           <!-- Breadcrumbs-->

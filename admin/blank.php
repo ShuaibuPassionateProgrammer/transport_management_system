@@ -17,6 +17,7 @@
     <link href="css/sb-admin.css" rel="stylesheet">
 </head>
 <body id="page-top">
+    <?php include'header.php'; ?>
     
 </body>
 </html>

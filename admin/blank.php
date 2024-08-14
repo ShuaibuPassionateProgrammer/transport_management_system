@@ -35,8 +35,6 @@
           <p>This is a great starting point for new custom pages.</p>
         </div>
         <!-- /.container-fluid -->
-
-
       </div>
       <!-- /.content-wrapper -->
 

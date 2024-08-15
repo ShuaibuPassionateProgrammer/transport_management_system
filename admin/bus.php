@@ -6,8 +6,7 @@ include 'topnav.php';
 <div class="col-lg-12">
     <div>
         <i class="fas fa-table"></i>
-
-            Bus Records  <a href="busadd.php?action=add" type="button" class="btn btn-xs btn-primary">Add New</a>
+        Bus Records  <a href="busadd.php?action=add" type="button" class="btn btn-xs btn-primary">Add New</a>
             </div>    
 
           <br> </br>

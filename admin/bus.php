@@ -26,7 +26,7 @@ include 'topnav.php';
                 $query = 'SELECT * FROM bus';
                 $result = mysqli_query($db, $query) or die (mysqli_error($db));
                   
-                        while ($row = mysqli_fetch_assoc($result)) {
+                while ($row = mysqli_fetch_assoc($result)) {
                                              
                             echo '<tr>';
                             echo '<td>'. $row['BUS_NAME'].'</td>';

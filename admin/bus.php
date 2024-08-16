@@ -7,9 +7,9 @@ include 'topnav.php';
     <div>
         <i class="fas fa-table"></i>
         Bus Records  <a href="busadd.php?action=add" type="button" class="btn btn-xs btn-primary">Add New</a>
-    </div>    
-
-          <br> </br>
+    </div>
+    
+    <br> </br>
                         <div class="table-responsive">
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>

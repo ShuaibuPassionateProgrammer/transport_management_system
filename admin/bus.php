@@ -37,8 +37,7 @@ include 'topnav.php';
                     echo ' <a  type="button" class="btn btn-xs btn-danger" href="busdel.php?type=bus&delete & id=' . $row['BUS_ID'] . '" onclick="return confirm(\'Are you sure, you want to Delete a Vehicle\');">DELETE </a> </td>';
                     echo '</tr> ';
                 }
-            ?> 
-                                    
+            ?>                      
             </tbody>
         </table>
     </div>

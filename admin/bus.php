@@ -24,7 +24,7 @@ include 'topnav.php';
             <tbody>
                 <?php                  
                 $query = 'SELECT * FROM bus';
-                    $result = mysqli_query($db, $query) or die (mysqli_error($db));
+                $result = mysqli_query($db, $query) or die (mysqli_error($db));
                   
                         while ($row = mysqli_fetch_assoc($result)) {
                                              

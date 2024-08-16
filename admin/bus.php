@@ -15,10 +15,10 @@ include 'topnav.php';
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead>
                 <tr>
-                                        <th>Bus Name</th>
-                                        <th>Bus Type</th>
-                                        <th>Driver ID</th>
-                                        <th>Options</th>
+                    <th>Bus Name</th>
+                    <th>Bus Type</th>
+                    <th>Driver ID</th>
+                    <th>Options</th>
                                     </tr>
                                 </thead>
                                 <tbody>

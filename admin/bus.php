@@ -14,7 +14,7 @@ include 'topnav.php';
     <div class="table-responsive">
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead>
-                                    <tr>
+                <tr>
                                         <th>Bus Name</th>
                                         <th>Bus Type</th>
                                         <th>Driver ID</th>

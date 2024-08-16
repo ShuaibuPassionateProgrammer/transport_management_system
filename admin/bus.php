@@ -21,7 +21,7 @@ include 'topnav.php';
                     <th>Options</th>
                 </tr>
             </thead>
-                                <tbody>
+            <tbody>
                                  <?php                  
                 $query = 'SELECT * FROM bus';
                     $result = mysqli_query($db, $query) or die (mysqli_error($db));

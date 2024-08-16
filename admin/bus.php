@@ -19,7 +19,7 @@ include 'topnav.php';
                     <th>Bus Type</th>
                     <th>Driver ID</th>
                     <th>Options</th>
-                                    </tr>
+                </tr>
                                 </thead>
                                 <tbody>
                                  <?php                  

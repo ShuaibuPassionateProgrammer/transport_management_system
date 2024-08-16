@@ -27,15 +27,15 @@ include 'topnav.php';
                 $result = mysqli_query($db, $query) or die (mysqli_error($db));
                   
                 while ($row = mysqli_fetch_assoc($result)) {
-                                             
-                            echo '<tr>';
-                            echo '<td>'. $row['BUS_NAME'].'</td>';
-                            echo '<td>'. $row['BUS_TYPE'].'</td>';
-                            echo '<td>'. $row['DRIVER_ID'].'</td>';
-                            echo '<td> <a type="button" class="btn btn-xs btn-primary" href="bussearch.php?action=edit & id='.$row['BUS_ID'] . '" > SEARCH </a> ';
-                            echo ' <a  type="button" class="btn btn-xs btn-warning" href="busedit.php?action=edit & id='.$row['BUS_ID'] . '"> EDIT </a> ';
-                            echo ' <a  type="button" class="btn btn-xs btn-danger" href="busdel.php?type=bus&delete & id=' . $row['BUS_ID'] . '" onclick="return confirm(\'Are you sure, you want to Delete a Vehicle\');">DELETE </a> </td>';
-                            echo '</tr> ';
+                                        
+                    echo '<tr>';
+                    echo '<td>'. $row['BUS_NAME'].'</td>';
+                    echo '<td>'. $row['BUS_TYPE'].'</td>';
+                    echo '<td>'. $row['DRIVER_ID'].'</td>';
+                    echo '<td> <a type="button" class="btn btn-xs btn-primary" href="bussearch.php?action=edit & id='.$row['BUS_ID'] . '" > SEARCH </a> ';
+                    echo ' <a  type="button" class="btn btn-xs btn-warning" href="busedit.php?action=edit & id='.$row['BUS_ID'] . '"> EDIT </a> ';
+                    echo ' <a  type="button" class="btn btn-xs btn-danger" href="busdel.php?type=bus&delete & id=' . $row['BUS_ID'] . '" onclick="return confirm(\'Are you sure, you want to Delete a Vehicle\');">DELETE </a> </td>';
+                    echo '</tr> ';
                 }
             ?> 
                                     

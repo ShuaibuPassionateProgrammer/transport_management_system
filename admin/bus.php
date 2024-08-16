@@ -39,6 +39,6 @@ include 'topnav.php';
                 }
             ?> 
                                     
-                                </tbody>
-                            </table>
-                        </div>
+            </tbody>
+        </table>
+    </div>

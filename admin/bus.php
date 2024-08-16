@@ -20,7 +20,7 @@ include 'topnav.php';
                     <th>Driver ID</th>
                     <th>Options</th>
                 </tr>
-                                </thead>
+            </thead>
                                 <tbody>
                                  <?php                  
                 $query = 'SELECT * FROM bus';

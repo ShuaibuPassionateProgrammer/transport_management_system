@@ -1,2 +1,4 @@
-<?php include 'connection.php';
-include 'topnav.php'; ?>
+<?php 
+include 'connection.php';
+include 'topnav.php'; 
+?>

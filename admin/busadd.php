@@ -6,7 +6,7 @@ include 'topnav.php';
 <div class="contanier"> 
     <div class="card card-register mx-auto mt-5">
         <div class="card-header"><h2>Add new Vehicle</h2> </div>
-<div class="card-body">
+        <div class="card-body">
                  
 
                         <form role="form" method="post" action="bustrans.php?action=add">

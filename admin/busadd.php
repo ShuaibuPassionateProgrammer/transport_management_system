@@ -43,8 +43,8 @@ include 'topnav.php';
 
 
             </form>  
-                    </div>
-                </div>
-
         </div>
-        <!-- /.container-fluid -->
+    </div>
+
+</div>
+<!-- /.container-fluid -->

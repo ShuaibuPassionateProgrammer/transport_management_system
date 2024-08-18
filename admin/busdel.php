@@ -17,11 +17,11 @@ if (!isset($_GET['do']) || $_GET['do'] != 1) {
 				window.location = " bus.php";
 			</script>				
 				
-        <?php
-        //break;
-            }
+    <?php
+    //break;
         }
-        ?>
+    }
+    ?>
 
 </body>
 </html>

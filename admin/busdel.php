@@ -4,11 +4,9 @@ include('header.php');
 ?>  
 
 <body>
-    
+
 <?php
-if (!isset($_GET['do']) || $_GET['do'] != 1) {
-                
-	
+if (!isset($_GET['do']) || $_GET['do'] != 1) {            
     switch ($_GET['type']) {
         case 'bus':
             $query = 'DELETE FROM bus

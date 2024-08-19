@@ -38,7 +38,7 @@ include 'topnav.php';
                             <input class="form-control" placeholder="DRIVER ID" name="DRIVER_ID" value="<?php echo $b; ?>">
                         </div>
                         <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Update Record</button>
+                            <button type="submit" class="btn btn-primary">Update Record</button>
                         </div>
                 </form>  
                 </div>

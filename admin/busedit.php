@@ -40,7 +40,7 @@ include 'topnav.php';
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">Update Record</button>
                     </div>
-            </form>  
+                </form>  
             </div>
             </div>
             

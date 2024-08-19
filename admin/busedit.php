@@ -17,7 +17,7 @@ while($row = mysqli_fetch_array($result))
     $b=$row['DRIVER_ID'];
 }
               
-              $id = $_GET['id'];
+$id = $_GET['id'];
          
 ?>
 

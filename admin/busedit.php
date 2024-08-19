@@ -29,7 +29,7 @@ include 'topnav.php';
                             <input type="hidden" name="id" value="<?php echo $zz; ?>" />
                         </div>
                         <div class="form-group">
-                        <input class="form-control" placeholder="Bus Name" name="BUS_NAME" value="<?php echo $i; ?>">
+                            <input class="form-control" placeholder="Bus Name" name="BUS_NAME" value="<?php echo $i; ?>">
                         </div>
                         <div class="form-group">
                         <input class="form-control" placeholder="Bus Type" name="BUS_TYPE" value="<?php echo $a; ?>">

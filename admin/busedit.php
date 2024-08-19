@@ -5,21 +5,21 @@ include 'topnav.php';
 
 <div class="contanier">
     <div class="card card-register mx-auto mt-5">
-    <?php 
-    $query = 'SELECT * FROM bus WHERE BUS_ID ='.$_GET['id'];
-    $result = mysqli_query($db, $query) or die(mysqli_error($db));
+        <?php 
+        $query = 'SELECT * FROM bus WHERE BUS_ID ='.$_GET['id'];
+        $result = mysqli_query($db, $query) or die(mysqli_error($db));
 
-    while($row = mysqli_fetch_array($result))
-    {   
-        $zz= $row['BUS_ID'];
-        $i= $row['BUS_NAME'];
-        $a=$row['BUS_TYPE'];
-        $b=$row['DRIVER_ID'];
-    }
+        while($row = mysqli_fetch_array($result))
+        {   
+            $zz= $row['BUS_ID'];
+            $i= $row['BUS_NAME'];
+            $a=$row['BUS_TYPE'];
+            $b=$row['DRIVER_ID'];
+        }
+                    
+        $id = $_GET['id'];
                 
-    $id = $_GET['id'];
-            
-    ?>
+        ?>
 
         <div class="col-lg-12" style="box-shadow: rgba(2,2,2,0,2);">
             <h1>Edit Records</h1>

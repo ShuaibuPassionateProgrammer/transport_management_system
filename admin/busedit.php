@@ -7,7 +7,7 @@ include 'topnav.php';
 <div class="card card-register mx-auto mt-5">
 <?php 
 $query = 'SELECT * FROM bus WHERE BUS_ID ='.$_GET['id'];
-            $result = mysqli_query($db, $query) or die(mysqli_error($db));
+$result = mysqli_query($db, $query) or die(mysqli_error($db));
               while($row = mysqli_fetch_array($result))
               {   
                 $zz= $row['BUS_ID'];

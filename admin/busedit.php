@@ -24,7 +24,6 @@ include 'topnav.php';
         <div class="col-lg-12" style="box-shadow: rgba(2,2,2,0,2);">
             <h1>Edit Records</h1>
                 <div class="col-lg-6"> 
-
                     <form role="form" method="post" action="busedit1.php">
                         
                         <div class="form-group">

@@ -32,7 +32,7 @@ include 'topnav.php';
                             <input class="form-control" placeholder="Bus Name" name="BUS_NAME" value="<?php echo $i; ?>">
                         </div>
                         <div class="form-group">
-                        <input class="form-control" placeholder="Bus Type" name="BUS_TYPE" value="<?php echo $a; ?>">
+                            <input class="form-control" placeholder="Bus Type" name="BUS_TYPE" value="<?php echo $a; ?>">
                         </div>
                         <div class="form-group">
                         <input class="form-control" placeholder="DRIVER ID" name="DRIVER_ID" value="<?php echo $b; ?>">

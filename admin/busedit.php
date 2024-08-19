@@ -44,7 +44,7 @@ include 'topnav.php';
             </div>
         </div>
             
-        </div>
-        <!-- /.container-fluid -->
+    </div>
+    <!-- /.container-fluid -->
 
         </div>

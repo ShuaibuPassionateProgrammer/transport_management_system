@@ -25,7 +25,6 @@ include 'topnav.php';
             <h1>Edit Records</h1>
                 <div class="col-lg-6"> 
                     <form role="form" method="post" action="busedit1.php">
-                        
                         <div class="form-group">
                             <input type="hidden" name="id" value="<?php echo $zz; ?>" />
                         </div>

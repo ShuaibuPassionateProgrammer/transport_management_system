@@ -1,2 +1,3 @@
-<?php include 'connection.php';
+<?php 
+include 'connection.php';
 include 'topnav.php'; ?>

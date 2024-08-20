@@ -14,8 +14,8 @@ $query = 'UPDATE bus set BUS_NAME ="'.$bname.'", BUS_TYPE ="'.$btype.'", DRIVER_
 $result = mysqli_query($db, $query) or die(mysqli_error($db));
 							
 ?>	
-	<script type="text/javascript">
-			alert("Update Successfull.");
-			window.location = "bus.php";
-		</script>
+<script type="text/javascript">
+        alert("Update Successfull.");
+        window.location = "bus.php";
+</script>
  <?php include 'footer.php'; ?>

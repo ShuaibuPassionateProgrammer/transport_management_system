@@ -5,10 +5,10 @@ include 'topnav.php';
 
 <body>
 <?php
-			$zz = $_POST['id'];
-			$bname = $_POST['BUS_NAME'];
-		    $btype = $_POST['BUS_TYPE'];
-			$did= $_POST['DRIVER_ID'];
+$zz = $_POST['id'];
+$bname = $_POST['BUS_NAME'];
+$btype = $_POST['BUS_TYPE'];
+$did= $_POST['DRIVER_ID'];
 			
 		
 	 			$query = 'UPDATE bus set BUS_NAME ="'.$bname.'",

@@ -42,7 +42,6 @@ include 'topnav.php'
         </div>
     </div>
     <!-- /.container-fluid -->
-
 </div>
 <!-- /#page-wrapper -->
 

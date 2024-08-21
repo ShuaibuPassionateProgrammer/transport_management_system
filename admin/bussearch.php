@@ -9,8 +9,7 @@ include 'topnav.php'
         <div class="card-body">
 
             <?php
-            $query = 'SELECT * FROM bus
-                        WHERE
+            $query = 'SELECT * FROM bus WHERE
                         BUS_ID ='.$_GET['id'];
                         $result = mysqli_query($db, $query) or die(mysqli_error($db));
                         while($row = mysqli_fetch_array($result))

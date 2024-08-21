@@ -25,25 +25,25 @@ include 'topnav.php'
             ?>
 
 
-                        <form role="form" method="post" action="bus.php">
-                            
-                            <div class="form-group">
-                                <input type="hidden" name="id" value="<?php echo $zz; ?>" />
-                            </div>
-                            <div class="form-group">
-                              <input class="form-control" placeholder="Bus Name" name="BUS_NAME" value="<?php echo $i; ?>">
-                            </div>
-                            <div class="form-group">
-                              <input class="form-control" placeholder="Bus Type" name="BUS_TYPE" value="<?php echo $a; ?>">
-                            </div> 
-                            <div class="form-group">
-                              <input class="form-control" placeholder="Driver ID" name="DRIVER_ID" value="<?php echo $b; ?>">
-                            </div>
-                            <button type="submit" class="btn btn-outline-primary">Return to main menu</button>
-                         
+            <form role="form" method="post" action="bus.php">
+                
+                <div class="form-group">
+                    <input type="hidden" name="id" value="<?php echo $zz; ?>" />
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="Bus Name" name="BUS_NAME" value="<?php echo $i; ?>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="Bus Type" name="BUS_TYPE" value="<?php echo $a; ?>">
+                </div> 
+                <div class="form-group">
+                    <input class="form-control" placeholder="Driver ID" name="DRIVER_ID" value="<?php echo $b; ?>">
+                </div>
+                <button type="submit" class="btn btn-outline-primary">Return to main menu</button>
+                
 
 
-                      </form>  
+            </form>  
                     </div>
                 </div>
                 

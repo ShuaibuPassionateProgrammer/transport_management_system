@@ -24,7 +24,6 @@ include 'topnav.php'
             ?>
 
             <form role="form" method="post" action="bus.php">
-                
                 <div class="form-group">
                     <input type="hidden" name="id" value="<?php echo $zz; ?>" />
                 </div>

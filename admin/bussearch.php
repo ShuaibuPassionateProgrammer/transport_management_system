@@ -39,7 +39,7 @@ include 'topnav.php'
                     <button type="submit" class="btn btn-outline-primary">Return to main menu</button>
                 </form>  
             </div>
-    </div>
+        </div>
     
 </div>
 <!-- /.container-fluid -->

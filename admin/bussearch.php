@@ -23,7 +23,6 @@ include 'topnav.php'
                     
             ?>
 
-
             <form role="form" method="post" action="bus.php">
                 
                 <div class="form-group">

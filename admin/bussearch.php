@@ -13,14 +13,14 @@ include 'topnav.php'
             $result = mysqli_query($db, $query) or die(mysqli_error($db));
             
             while($row = mysqli_fetch_array($result))
-                        {   
-                            $zz= $row['BUS_ID'];
-                            $i= $row['BUS_NAME'];
-                            $a=$row['BUS_TYPE'];
-                            $b=$row['DRIVER_ID'];
-                        }
-                        
-                        $id = $_GET['id'];
+            {   
+                $zz= $row['BUS_ID'];
+                $i= $row['BUS_NAME'];
+                $a=$row['BUS_TYPE'];
+                $b=$row['DRIVER_ID'];
+            }
+            
+            $id = $_GET['id'];
                     
             ?>
 

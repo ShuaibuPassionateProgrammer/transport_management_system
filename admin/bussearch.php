@@ -38,11 +38,11 @@ include 'topnav.php'
                 </div>
                 <button type="submit" class="btn btn-outline-primary">Return to main menu</button>
             </form>  
-                    </div>
-                </div>
-                
-            </div>
-            <!-- /.container-fluid -->
+        </div>
+    </div>
+    
+</div>
+<!-- /.container-fluid -->
 
         </div>
         <!-- /#page-wrapper -->

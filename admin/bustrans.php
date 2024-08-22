@@ -19,8 +19,8 @@
                     
     }
     ?>
-    	<script type="text/javascript">
-			alert("Successfully added.");
-			window.location = "bus.php";
-		</script>
+<script type="text/javascript">
+    alert("Successfully added.");
+    window.location = "bus.php";
+</script>
                     </div>

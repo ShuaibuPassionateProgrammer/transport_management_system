@@ -1,4 +1,4 @@
- <?php include'header.php' ;?>
+<?php include'header.php' ;?>
 <?php include'connection.php' ;?>
 
  <div class="col-lg-12">

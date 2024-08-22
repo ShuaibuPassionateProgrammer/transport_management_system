@@ -3,10 +3,10 @@
 
  <div class="col-lg-12">
     <?php
-            // $bid= $_POST['id'];
-            $bname= $_POST['BUS_NAME'];
-            $btype= $_POST['BUS_TYPE'];
-            $did= $_POST['DRIVER_ID'];
+    // $bid= $_POST['id'];
+    $bname= $_POST['BUS_NAME'];
+    $btype= $_POST['BUS_TYPE'];
+    $did= $_POST['DRIVER_ID'];
             
     
         switch($_GET['action']){

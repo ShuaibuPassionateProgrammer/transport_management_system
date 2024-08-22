@@ -1,7 +1,7 @@
 <?php include'header.php' ;?>
 <?php include'connection.php' ;?>
 
- <div class="col-lg-12">
+<div class="col-lg-12">
     <?php
     // $bid= $_POST['id'];
     $bname= $_POST['BUS_NAME'];
@@ -23,4 +23,4 @@
     alert("Successfully added.");
     window.location = "bus.php";
 </script>
-                    </div>
+</div>

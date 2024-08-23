@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<?php
+ $db = mysqli_connect('localhost', 'root', '') or
+        die ('Unable to connect. Check your connection parameters.');
+        mysqli_select_db($db, 'tms_002' ) or die(mysqli_error($db));
+?>

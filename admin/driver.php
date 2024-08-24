@@ -2,8 +2,8 @@
 include 'connection.php';
 include 'topnav.php'; 
 ?>
- <div class="col-lg-12">
-                        <div>
+<div class="col-lg-12">
+    <div>
             <i class="fas fa-table"></i>
 
                Driver Records  <a href="driveradd.php?action=add" type="button" class="btn btn-xs btn-primary">Add New</a>

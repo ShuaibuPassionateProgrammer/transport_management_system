@@ -23,8 +23,8 @@ include 'topnav.php';
             </thead>
             <tbody>
                 <?php                  
-$query = 'SELECT * FROM driver';
-$result = mysqli_query($db, $query) or die (mysqli_error($db));
+                $query = 'SELECT * FROM driver';
+                $result = mysqli_query($db, $query) or die (mysqli_error($db));
 
     while ($row = mysqli_fetch_assoc($result)) {
                             

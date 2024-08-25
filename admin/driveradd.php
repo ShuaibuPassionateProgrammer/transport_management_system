@@ -8,7 +8,8 @@ include 'topnav.php';
         Driver Records  <a href="driveradd.php?action=add" type="button" class="btn btn-xs btn-primary">Add New</a>
     </div>    
     
-    <br> </br>      
+    <br> </br> 
+
     <div class="table-responsive">
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead>
@@ -22,8 +23,8 @@ include 'topnav.php';
             </thead>
             <tbody>
                 <?php                  
-$query = 'SELECT * FROM driver';
-$result = mysqli_query($db, $query) or die (mysqli_error($db));
+                $query = 'SELECT * FROM driver';
+                $result = mysqli_query($db, $query) or die (mysqli_error($db));
 
     while ($row = mysqli_fetch_assoc($result)) {
                             

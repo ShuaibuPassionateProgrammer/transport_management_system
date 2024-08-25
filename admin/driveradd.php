@@ -4,10 +4,9 @@ include 'topnav.php';
 ?>
 <div class="col-lg-12">
     <div>
-            <i class="fas fa-table"></i>
-
-               Driver Records  <a href="driveradd.php?action=add" type="button" class="btn btn-xs btn-primary">Add New</a>
-            </div>    
+        <i class="fas fa-table"></i>
+        Driver Records  <a href="driveradd.php?action=add" type="button" class="btn btn-xs btn-primary">Add New</a>
+    </div>    
 
                           <br> </br>      
                         <div class="table-responsive">

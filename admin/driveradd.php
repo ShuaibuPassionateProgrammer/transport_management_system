@@ -1,6 +1,8 @@
-<?php include 'connection.php';
-include 'topnav.php'; ?>
- <div class="col-lg-12">
+<?php 
+include 'connection.php';
+include 'topnav.php'; 
+?>
+<div class="col-lg-12">
                         <div>
             <i class="fas fa-table"></i>
 

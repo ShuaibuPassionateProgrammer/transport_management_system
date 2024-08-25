@@ -38,8 +38,7 @@ include 'topnav.php';
                     echo ' <a  type="button" class="btn btn-xs btn-danger" href="driverdel.php?type=driver&delete & id='.$row['DRIVER_ID'] . '" onclick="return confirm(\'Are you sure, you want to Delete a Driver\');">DELETE </a> </td>';
                     echo '</tr> ';
                 }
-                ?> 
-                
+                ?>  
             </tbody>
         </table>
     </div><?php include 'footer.php'; ?>

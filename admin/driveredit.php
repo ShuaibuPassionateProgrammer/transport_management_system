@@ -4,7 +4,7 @@ include 'topnav.php';
 ?>
 
 <div class="contanier">
-<div class="card card-register mx-auto mt-5">
+    <div class="card card-register mx-auto mt-5">
 <?php 
 $query = 'SELECT * FROM driver
               WHERE

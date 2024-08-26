@@ -19,7 +19,7 @@ include 'topnav.php';
     }
     
     $id = $_GET['id'];
-?>
+    ?>
 
              <div class="col-lg-12 p-4">
                       <h2 class="ml-4">Edit Driver Records</h2>

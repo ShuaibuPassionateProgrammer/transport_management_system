@@ -49,6 +49,5 @@ include 'topnav.php';
     
 </div>
 <!-- /.container-fluid -->
-
-        </div>
+</div>
         <?php include 'footer.php'; ?>

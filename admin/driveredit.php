@@ -16,7 +16,6 @@ include 'topnav.php';
         $demail = $row['DRIVER_EMAIL'];
         $dphone = $row['DRIVER_PHONE'];
         $edate =$row['EMPLOY_DATE'];
-    
     }
     
     $id = $_GET['id'];

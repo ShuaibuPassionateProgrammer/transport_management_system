@@ -1,6 +1,7 @@
 <?php 
 include 'connection.php';
-include 'topnav.php'; ?>
+include 'topnav.php'; 
+?>
 <body>
 <?php
 			$d_id = $_POST['id'];

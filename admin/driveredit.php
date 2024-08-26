@@ -7,18 +7,18 @@ include 'topnav.php';
     <div class="card card-register mx-auto mt-5">
     <?php 
     $query = 'SELECT * FROM driver WHERE DRIVER_ID ='.$_GET['id'];
-            $result = mysqli_query($db, $query) or die(mysqli_error($db));
-              while($row = mysqli_fetch_array($result))
-              {   
-                $did = $row['DRIVER_ID'];
-                $dname = $row['DRIVER_NAME'];
-                $demail = $row['DRIVER_EMAIL'];
-                $dphone = $row['DRIVER_PHONE'];
-                $edate =$row['EMPLOY_DATE'];
-             
-              }
-              
-              $id = $_GET['id'];
+    $result = mysqli_query($db, $query) or die(mysqli_error($db));
+    while($row = mysqli_fetch_array($result))
+    {   
+    $did = $row['DRIVER_ID'];
+    $dname = $row['DRIVER_NAME'];
+    $demail = $row['DRIVER_EMAIL'];
+    $dphone = $row['DRIVER_PHONE'];
+    $edate =$row['EMPLOY_DATE'];
+    
+    }
+    
+    $id = $_GET['id'];
          
 ?>
 

@@ -18,4 +18,4 @@ include 'topnav.php';
         alert("Update Successfull.");
     window.location = "driver.php";
     </script>
- <?php include 'footer.php'; ?>
+<?php include 'footer.php'; ?>

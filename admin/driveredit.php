@@ -31,7 +31,7 @@ include 'topnav.php';
                 </div>
                 <div class="card-body">
                     <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Driver Name" name="DRIVER_NAME" value="<?php echo $dname; ?>" required>
+                        <input type="text" class="form-control" placeholder="Driver Name" name="DRIVER_NAME" value="<?php echo $dname; ?>" required>
                     </div>
                     <div class="form-group">
                     <input type="email" class="form-control" placeholder="Driver Email" name="DRIVER_EMAIL" value="<?php echo $demail; ?>" required>

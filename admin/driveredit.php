@@ -11,11 +11,11 @@ include 'topnav.php';
     
     while($row = mysqli_fetch_array($result))
     {   
-    $did = $row['DRIVER_ID'];
-    $dname = $row['DRIVER_NAME'];
-    $demail = $row['DRIVER_EMAIL'];
-    $dphone = $row['DRIVER_PHONE'];
-    $edate =$row['EMPLOY_DATE'];
+        $did = $row['DRIVER_ID'];
+        $dname = $row['DRIVER_NAME'];
+        $demail = $row['DRIVER_EMAIL'];
+        $dphone = $row['DRIVER_PHONE'];
+        $edate =$row['EMPLOY_DATE'];
     
     }
     

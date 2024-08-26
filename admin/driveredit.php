@@ -34,7 +34,7 @@ include 'topnav.php';
                         <input type="text" class="form-control" placeholder="Driver Name" name="DRIVER_NAME" value="<?php echo $dname; ?>" required>
                     </div>
                     <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Driver Email" name="DRIVER_EMAIL" value="<?php echo $demail; ?>" required>
+                        <input type="email" class="form-control" placeholder="Driver Email" name="DRIVER_EMAIL" value="<?php echo $demail; ?>" required>
                     </div>
                     <div class="form-group">
                     <input type="tel" class="form-control" placeholder="Driver Phone" name="DRIVER_PHONE" value="<?php echo $dphone; ?>" required>

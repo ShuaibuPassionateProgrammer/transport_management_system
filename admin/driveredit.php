@@ -40,7 +40,7 @@ include 'topnav.php';
                         <input type="tel" class="form-control" placeholder="Driver Phone" name="DRIVER_PHONE" value="<?php echo $dphone; ?>" required>
                     </div>
                     <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Employ Date" name="EMPLOY_DATE" value="<?php echo $edate; ?>" required>
+                        <input type="text" class="form-control" placeholder="Employ Date" name="EMPLOY_DATE" value="<?php echo $edate; ?>" required>
                     </div>
                     <button type="submit" class="btn btn-primary">Update Driver</button>
             </form> 

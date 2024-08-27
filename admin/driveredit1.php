@@ -2,11 +2,11 @@
 include 'topnav.php'; ?>
 <body>
 <?php
-			$d_id = $_POST['id'];
-			$dname = $_POST['DRIVER_NAME'];
-			$demail = $_POST['DRIVER_EMAIL'];
-			$dphone = $_POST['DRIVER_PHONE'];
-		    $edate = $_POST['EMPLOY_DATE'];
+$d_id = $_POST['id'];
+$dname = $_POST['DRIVER_NAME'];
+$demail = $_POST['DRIVER_EMAIL'];
+$dphone = $_POST['DRIVER_PHONE'];
+$edate = $_POST['EMPLOY_DATE'];
 			
 		
 	 			$query = 'UPDATE driver set DRIVER_NAME ="'.$dname.'",

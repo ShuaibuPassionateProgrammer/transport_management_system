@@ -7,21 +7,21 @@ include 'topnav.php'
     <div class="card card-register mx-auto mt-5">
         <div class="card-header"> <h2>Check Record</h2> </div>
         <div class="card-body">
-<?php
-$query = 'SELECT * FROM driver
-              WHERE
-              DRIVER_ID ='.$_GET['id'];
-            $result = mysqli_query($db, $query) or die(mysqli_error($db));
-              while($row = mysqli_fetch_array($result))
-              {   
-                $zz= $row['DRIVER_ID'];
-                $i= $row['DRIVER_NAME'];
-                $a=$row['EMPLOY_DATE'];
-              }
-              
-              $id = $_GET['id'];
-         
-?>
+        <?php
+        $query = 'SELECT * FROM driver
+                    WHERE
+                    DRIVER_ID ='.$_GET['id'];
+                    $result = mysqli_query($db, $query) or die(mysqli_error($db));
+                    while($row = mysqli_fetch_array($result))
+                    {   
+                        $zz= $row['DRIVER_ID'];
+                        $i= $row['DRIVER_NAME'];
+                        $a=$row['EMPLOY_DATE'];
+                    }
+                    
+                    $id = $_GET['id'];
+                
+        ?>
 
 
                         <form role="form" method="post" action="driver.php">

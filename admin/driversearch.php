@@ -39,7 +39,7 @@ include 'topnav.php'
         </div>
     </div>
 </div>
-            <!-- /.container-fluid -->
+<!-- /.container-fluid -->
 
         </div>
         <!-- /#page-wrapper -->

@@ -35,9 +35,6 @@ include 'topnav.php'
 
                 <button type="submit" class="btn btn-outline-primary">Return to main menu</button>
                 <br></br>
-                
-
-
             </form>  
                     </div>
                 </div>

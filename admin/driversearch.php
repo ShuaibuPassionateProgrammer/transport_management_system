@@ -22,8 +22,6 @@ include 'topnav.php'
             
             $id = $_GET['id'];        
             ?>
-
-
             <form role="form" method="post" action="driver.php">
                 
                 <div class="form-group">

@@ -18,8 +18,7 @@ include 'topnav.php'
             $a=$row['EMPLOY_DATE'];
         }
         
-        $id = $_GET['id'];
-                
+        $id = $_GET['id'];        
         ?>
 
 

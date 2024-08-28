@@ -44,7 +44,7 @@ include 'topnav.php'
 <!-- /#page-wrapper -->
 
 </div>
-    <!-- /#wrapper -->
+<!-- /#wrapper -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

@@ -22,8 +22,7 @@ include 'topnav.php'
             
             $id = $_GET['id'];        
             ?>
-            <form role="form" method="post" action="driver.php">
-                
+            <form role="form" method="post" action="driver.php">  
                 <div class="form-group">
                     <input type="hidden" name="id" value="<?php echo $zz; ?>" />
                 </div>

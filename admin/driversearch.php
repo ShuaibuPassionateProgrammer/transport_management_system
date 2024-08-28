@@ -9,7 +9,7 @@ include 'topnav.php'
         <div class="card-body">
         <?php
         $query = 'SELECT * FROM driver WHERE DRIVER_ID ='.$_GET['id'];
-                    $result = mysqli_query($db, $query) or die(mysqli_error($db));
+        $result = mysqli_query($db, $query) or die(mysqli_error($db));
                     while($row = mysqli_fetch_array($result))
                     {   
                         $zz= $row['DRIVER_ID'];

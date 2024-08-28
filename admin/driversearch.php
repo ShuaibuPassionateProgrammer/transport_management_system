@@ -58,5 +58,4 @@ include 'topnav.php'
 <script src="js/plugins/morris/morris-data.js"></script>
 
 </body>
-
 </html>

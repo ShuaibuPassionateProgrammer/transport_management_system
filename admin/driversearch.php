@@ -22,24 +22,24 @@ include 'topnav.php'
         ?>
 
 
-                        <form role="form" method="post" action="driver.php">
-                            
-                            <div class="form-group">
-                                <input type="hidden" name="id" value="<?php echo $zz; ?>" />
-                            </div>
-                            <div class="form-group">
-                              <input class="form-control" placeholder="Driver Name" name="DRIVER_NAME" value="<?php echo $i; ?>">
-                            </div>
-                            <div class="form-group">
-                              <input class="form-control" placeholder="Employ Date" name="EMPLOY_DATE" value="<?php echo $a; ?>">
-                            </div>
+            <form role="form" method="post" action="driver.php">
+                
+                <div class="form-group">
+                    <input type="hidden" name="id" value="<?php echo $zz; ?>" />
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="Driver Name" name="DRIVER_NAME" value="<?php echo $i; ?>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="Employ Date" name="EMPLOY_DATE" value="<?php echo $a; ?>">
+                </div>
 
-                            <button type="submit" class="btn btn-outline-primary">Return to main menu</button>
-                            <br></br>
-                         
+                <button type="submit" class="btn btn-outline-primary">Return to main menu</button>
+                <br></br>
+                
 
 
-                      </form>  
+            </form>  
                     </div>
                 </div>
                 

@@ -43,7 +43,7 @@ include 'topnav.php'
 </div>
 <!-- /#page-wrapper -->
 
-    </div>
+</div>
     <!-- /#wrapper -->
 
     <!-- jQuery -->

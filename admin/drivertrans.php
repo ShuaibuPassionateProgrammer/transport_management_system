@@ -11,9 +11,8 @@
         case 'add':			
             $query = "INSERT INTO driver (DRIVER_NAME,DRIVER_EMAIL,DRIVER_PHONE,EMPLOY_DATE) VALUES ('".$dname."','".$demail."','".$dphone."',NOW())";
             mysqli_query($db,$query)or die (mysqli_error($db));
-            
-        break;                
-    }
+            break;                
+        }
     ?>
     <script type="text/javascript">
         alert("Successfully added.");

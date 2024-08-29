@@ -24,4 +24,4 @@
         alert("Successfully added.");
         window.location = "driver.php";
     </script>
-                    </div>
+</div>

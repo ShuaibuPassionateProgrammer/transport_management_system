@@ -11,10 +11,8 @@
     
     switch($_GET['action']){
         case 'add':			
-                $query = "INSERT INTO driver
-                (DRIVER_NAME,DRIVER_EMAIL,DRIVER_PHONE,EMPLOY_DATE)
-                VALUES ('".$dname."','".$demail."','".$dphone."',NOW())";
-                mysqli_query($db,$query)or die (mysqli_error($db));
+            $query = "INSERT INTO driver (DRIVER_NAME,DRIVER_EMAIL,DRIVER_PHONE,EMPLOY_DATE) VALUES ('".$dname."','".$demail."','".$dphone."',NOW())";
+            mysqli_query($db,$query)or die (mysqli_error($db));
             
         break;                
     }

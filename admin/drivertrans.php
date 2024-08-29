@@ -1,7 +1,7 @@
- <?php include'header.php' ;?>
+<?php include'header.php' ;?>
 <?php include'connection.php' ;?>
 
- <div class="col-lg-12">
+<div class="col-lg-12">
                 <?php
 						$dname= $_POST['DRIVER_NAME'];
                 		$demail= $_POST['DRIVER_EMAIL'];

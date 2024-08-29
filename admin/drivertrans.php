@@ -20,8 +20,8 @@
                         
             }
     ?>
-    	<script type="text/javascript">
-			alert("Successfully added.");
-			window.location = "driver.php";
-		</script>
+    <script type="text/javascript">
+        alert("Successfully added.");
+        window.location = "driver.php";
+    </script>
                     </div>

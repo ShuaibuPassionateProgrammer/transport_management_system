@@ -3,9 +3,9 @@
 
 <div class="col-lg-12">
     <?php
-            $dname= $_POST['DRIVER_NAME'];
-            $demail= $_POST['DRIVER_EMAIL'];
-            $dphone= $_POST['DRIVER_PHONE'];
+    $dname= $_POST['DRIVER_NAME'];
+    $demail= $_POST['DRIVER_EMAIL'];
+    $dphone= $_POST['DRIVER_PHONE'];
             
             
     

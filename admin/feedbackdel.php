@@ -9,6 +9,9 @@ if(isset($_GET['?fdel'])) {
     if($query) {
         echo "<script>alert('FeedBack Deleted Successfully!');window.location.href='feedback.php'</script>";
     }
+    else {
+        
+    }
 }
 else {
     header('location: feedback.php');

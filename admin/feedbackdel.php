@@ -10,7 +10,7 @@ if(isset($_GET['?fdel'])) {
         echo "<script>alert('FeedBack Deleted Successfully!');window.location.href='feedback.php'</script>";
     }
     else {
-        
+        echo "<script>alert('FeedBack Deleted Successfully!');window.location.href='feedback.php'</script>";
     }
 }
 else {

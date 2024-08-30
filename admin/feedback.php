@@ -21,5 +21,7 @@
     <tbody>
         <?php
         $sql = "SELECT * FROM feedback f JOIN booking b ON f.booking_id = b.id";
+        $query = mysqli_query($db, $sql);
+        ?>
     </tbody>
 </table>

@@ -11,5 +11,9 @@ if(isset($_POST['update_feedback'])) {
 
     $sql = "UPDATE feedback SET fullname = '$full_name' WHERE id = $id";
     $query = mysqli_query($db, $sql);
+
+    if($query) {
+        echo "<script>alert('FeedBack Updated Successfully!');window.location.href='feedback.php'</script>";
+    }
 }
 ?>

@@ -25,6 +25,7 @@
 
         if(mysqli_num_rows($query) > 0) {
             while ($row=mysqli_fetch_assoc($query)) {
+                ?>
                 <tr>
                     <td><?=$row['id']?></td>
                     <td><?=$row['fullname']?></td>
@@ -45,9 +46,6 @@
             ?>
             <td colspan="7"><p class="text-danger">FeedBack not available!</p></td>
             <?php
-        }
-        ?>
-            }
         }
         ?>
     </tbody>

@@ -18,4 +18,5 @@
             <td class="text-center">Actions</td>
         </tr>
     </thead>
+    <tbody></tbody>
 </table>

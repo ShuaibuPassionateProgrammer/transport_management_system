@@ -19,4 +19,7 @@ if(isset($_POST['update_feedback'])) {
         echo "<script>alert('FeedBack Updated Successfully!');window.location.href='feedback.php'</script>";
     }
 }
+else {
+    header('location: feedback.php');
+}
 ?>

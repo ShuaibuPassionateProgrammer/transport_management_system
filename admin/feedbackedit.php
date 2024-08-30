@@ -59,6 +59,8 @@ if(isset($_GET['fid'])) {
         </div>
     </div>
 </div>
+
+<?php include('footer.php');?>
     <?php
 }
 else {

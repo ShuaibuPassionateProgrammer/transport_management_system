@@ -18,5 +18,8 @@
             <td class="text-center">Actions</td>
         </tr>
     </thead>
-    <tbody></tbody>
+    <tbody>
+        <?php
+        $sql = "SELECT * FROM feedback f JOIN booking b ON f.booking_id = b.id";
+    </tbody>
 </table>

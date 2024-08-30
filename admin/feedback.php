@@ -22,6 +22,8 @@
         <?php
         $sql = "SELECT * FROM feedback f JOIN booking b ON f.booking_id = b.id";
         $query = mysqli_query($db, $sql);
+
+        if(mysqli_num_rows($query) > 0) {}
         ?>
     </tbody>
 </table>

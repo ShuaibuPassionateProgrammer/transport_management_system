@@ -6,4 +6,16 @@
     Passengers Feed Back 
 </div><br>
 
-<table></table>
+<table>
+    <thead>
+        <tr>
+            <td>#</td>
+            <td>Full Name</td>
+            <td>Email</td>
+            <td>Phone</td>
+            <td>Subject</td>
+            <td>Message</td>
+            <td class="text-center">Actions</td>
+        </tr>
+    </thead>
+</table>

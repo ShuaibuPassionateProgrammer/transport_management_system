@@ -8,5 +8,8 @@ if(isset($_POST['update_feedback'])) {
     $phone = $_POST['phone'];
     $subject = $_POST['subject'];
     $message = $_POST['message'];
+
+    $sql = "UPDATE feedback SET fullname = '$full_name' WHERE id = $id";
+    $query = mysqli_query($db, $sql);
 }
 ?>

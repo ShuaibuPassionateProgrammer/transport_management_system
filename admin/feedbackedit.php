@@ -2,7 +2,7 @@
 if(isset($_GET['fid'])) {
     $fid = $_GET['fid'];
     ?>
-    <?php include('connection.php');?>
+<?php include('connection.php');?>
 <?php include('topnav.php');?>
     <?php
 }

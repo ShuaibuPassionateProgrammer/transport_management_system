@@ -4,6 +4,6 @@ if(isset($_GET['?fdel'])) {
     $fid = $_GET['?fdel'];
 }
 else {
-    
+    header('location: feedback.php');
 }
 ?>

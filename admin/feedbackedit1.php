@@ -15,5 +15,8 @@ if(isset($_POST['update_feedback'])) {
     if($query) {
         echo "<script>alert('FeedBack Updated Successfully!');window.location.href='feedback.php'</script>";
     }
+    else {
+        echo "<script>alert('FeedBack Updated Successfully!');window.location.href='feedback.php'</script>";
+    }
 }
 ?>

@@ -2,6 +2,9 @@
 if(isset($_GET['freply'])) {
     $fid = $_GET['freply'];
     ?>
+<?php include('connection.php');?>
+<?php include('topnav.php');?>
+
 <div class="container mb-4 p-4 mt-5">
     <div class="row justify-content-center">
         <div class="col-md-8 shadow">

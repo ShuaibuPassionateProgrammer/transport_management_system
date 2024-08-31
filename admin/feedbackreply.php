@@ -51,6 +51,8 @@ if(isset($_GET['freply'])) {
         </div>
     </div>
 </div>
+
+
 <?php include('footer.php');?>
     <?php
 }

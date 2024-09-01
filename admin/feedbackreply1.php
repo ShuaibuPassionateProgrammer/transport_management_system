@@ -6,5 +6,10 @@ if(isset($_POST['reply_feedback'])) {
 
     $sql = "UPDATE feedback SET replymessage = '$message' WHERE id = $id";
     $query = mysqli_query($db, $sql);
+
+    if($query) {}
+    else {
+        echo "<script>alert('FeedBack Reply Failed!');window.location.href='feedback.php'</script>";
+    }
 }
 ?>

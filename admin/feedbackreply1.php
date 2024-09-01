@@ -14,4 +14,7 @@ if(isset($_POST['reply_feedback'])) {
         echo "<script>alert('FeedBack Reply Failed!');window.location.href='feedback.php'</script>";
     }
 }
+else {
+    header('location: feedback.php');
+}
 ?>

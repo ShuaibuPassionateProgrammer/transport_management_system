@@ -5,5 +5,6 @@ if(isset($_POST['reply_feedback'])) {
     $message = $_POST['message'];
 
     $sql = "UPDATE feedback SET replymessage = '$message' WHERE id = $id";
+    $query = mysqli_query($db, $sql);
 }
 ?>

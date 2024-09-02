@@ -62,3 +62,20 @@ gulp.task('vendor', function() {
     .pipe(gulp.dest('./vendor/jquery-easing'))
 
 });
+
+// Compile SCSS
+gulp.task('css:compile', function() {
+  return gulp.src('./scss/**/*.scss')
+    .pipe(sass.sync({
+      outputStyle: 'expanded'
+    }).on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(header(banner, {
+      pkg: pkg
+    }))
+    .pipe(gulp.dest('./css'))
+    .pipe(browserSync.stream());
+});

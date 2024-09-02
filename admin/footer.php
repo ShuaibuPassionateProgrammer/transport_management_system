@@ -56,3 +56,7 @@
 
     <!-- Demo scripts for this page-->
     <script src="js/demo/datatables-demo.js"></script>
+
+      </body>
+
+</html>

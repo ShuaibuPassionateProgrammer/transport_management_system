@@ -96,3 +96,20 @@ gulp.task('css:minify', ['css:compile'], function() {
 
 // CSS
 gulp.task('css', ['css:compile', 'css:minify']);
+
+// Minify JavaScript
+gulp.task('js:minify', function() {
+  return gulp.src([
+      './js/*.js',
+      '!./js/*.min.js'
+    ])
+    .pipe(uglify())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(header(banner, {
+      pkg: pkg
+    }))
+    .pipe(gulp.dest('./js'))
+    .pipe(browserSync.stream());
+});

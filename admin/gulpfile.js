@@ -93,3 +93,6 @@ gulp.task('css:minify', ['css:compile'], function() {
     .pipe(gulp.dest('./css'))
     .pipe(browserSync.stream());
 });
+
+// CSS
+gulp.task('css', ['css:compile', 'css:minify']);

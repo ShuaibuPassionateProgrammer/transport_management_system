@@ -113,3 +113,6 @@ gulp.task('js:minify', function() {
     .pipe(gulp.dest('./js'))
     .pipe(browserSync.stream());
 });
+
+// JS
+gulp.task('js', ['js:minify']);

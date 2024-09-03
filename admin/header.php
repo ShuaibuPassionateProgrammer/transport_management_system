@@ -16,7 +16,7 @@
     <link href="css/sb-admin.css" rel="stylesheet">
     <title>TRANSPORT MANAGEMENT SYSTEM</title>
 </head>
-<body>
+<body id="page-top">
     
 </body>
 </html>

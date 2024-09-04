@@ -7,8 +7,7 @@ include 'topnav.php';
 <ol class="breadcrumb">
     <li class="breadcrumb-item" style="background-image: linear-gradient();">
         <a href="index."> <h2> TRANSPORT MANAGEMENT SYSTEM </h2> </a>
-</li>
-
+    </li>
 </ol>
 
 <div class="bus_logo">

@@ -49,7 +49,6 @@ confirm_logged_in();
           </div>
         </li>
       </ul>
-
     </nav>
 
 

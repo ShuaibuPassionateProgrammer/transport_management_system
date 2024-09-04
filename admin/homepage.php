@@ -15,7 +15,6 @@ confirm_logged_in();
     <meta name="description" content="">
     <meta name="author" content="">
     <title>BUS SCHEDULING SYSTEM</title>
-
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 

@@ -25,7 +25,6 @@ confirm_logged_in();
     <link href="css/sb-admin.css" rel="stylesheet">
   </head>
   <body id="page-top">
-
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top" style="background-image: linear-gradient(pink,#2144);">
 
       <a class="navbar-brand mr-1" href="index.php">BUS SCHEDULING</a>

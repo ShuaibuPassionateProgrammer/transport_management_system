@@ -13,8 +13,8 @@ include 'topnav.php';
 <div class="bus_logo">
     <a class="image full"><img src="image/deluxe.jpg" style="width:800px;" style="background-attachment: fixed;" style="background-size: contain;"  > </a>
 
-<!-- Page Content -->
-<h4><h4/>
+    <!-- Page Content -->
+    <h4><h4/>
 
 <hr>
 <p> <h5> </h5></p>

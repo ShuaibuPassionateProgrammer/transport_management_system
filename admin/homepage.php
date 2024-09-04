@@ -51,7 +51,6 @@ confirm_logged_in();
       </ul>
     </nav>
 
-
     <div id="wrapper">
 
       <!-- Sidebar -->

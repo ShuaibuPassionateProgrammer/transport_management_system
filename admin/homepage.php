@@ -8,7 +8,6 @@ confirm_logged_in();
 
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
 
     <meta charset="utf-8">

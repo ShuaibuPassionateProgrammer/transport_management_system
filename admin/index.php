@@ -16,7 +16,7 @@ include 'topnav.php';
     <!-- Page Content -->
     <h4><h4/>
 
-<hr>
-<p> <h5> </h5></p>
+    <hr>
+    <p> <h5> </h5></p>
 
 <?php include 'footer.php'; ?>

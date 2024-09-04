@@ -3,7 +3,7 @@ include 'connection.php';
   
 require 'session.php';
 confirm_logged_in();
-  ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">

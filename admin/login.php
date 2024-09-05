@@ -22,6 +22,38 @@
    <?php
  } ?>
 <body class="bg-dark">
-    
+    <div class="container">
+      <div class="card card-login mx-auto mt-5">
+        <div class="card-header"> <h4 class="text-center"> Admin Login </h4> </div>
+        <div class="card-body" style="">
+          <form method="POST" action="success.php">
+            <div class="form-group">
+              <div class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="user" required="required" autofocus="autofocus">
+                <label for="inputEmail">Email address</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="pass" required="required">
+                <label for="inputPassword">Password</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="remember-me">
+                  Remember Password
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="login">Login</button>
+          </form>
+          <div class="text-center">
+            <a class="d-block small mt-3" href="../">Back to Homepage</a>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>

@@ -21,7 +21,7 @@
     </script>
    <?php
  } ?>
-<body>
+<body class="bg-dark">
     
 </body>
 </html>

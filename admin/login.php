@@ -15,6 +15,12 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
 </head>
+<?php if(logged_in()){ ?>
+    <script type="text/javascript">
+      window.location = "index.php";
+    </script>
+   <?php
+ } ?>
 <body>
     
 </body>

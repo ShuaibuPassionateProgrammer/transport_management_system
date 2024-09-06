@@ -1,9 +1,10 @@
 <?php 
 include 'connection.php';
 include 'topnav.php';?>
-           <div class="col-lg-12">
-                                 <div> 
-            <i class="fas fa-table"></i>
+           
+<div class="col-lg-12">
+                        <div> 
+<i class="fas fa-table"></i>
 
                Route Records  <a href="routeadd.php?action=add" type="button" class="btn btn-xs btn-primary">Add New</a>
             </div>  <br> </br>

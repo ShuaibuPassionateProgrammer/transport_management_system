@@ -6,7 +6,7 @@ include 'topnav.php';?>
     <i class="fas fa-table"></i>
 
     Route Records  <a href="routeadd.php?action=add" type="button" class="btn btn-xs btn-primary">Add New</a>
-            </div>  <br> </br>
+    </div>  <br> </br>
                                 
                         <div class="table-responsive">
                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">

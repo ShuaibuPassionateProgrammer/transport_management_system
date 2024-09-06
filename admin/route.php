@@ -18,7 +18,7 @@ include 'topnav.php';?>
                     <th>Option</th>
                 </tr>
             </thead>
-                                <tbody>
+            <tbody>
                                  <?php                  
                 $query = 'SELECT * FROM route';
                     $result = mysqli_query($db, $query) or die (mysqli_error($db));

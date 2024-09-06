@@ -5,4 +5,6 @@ include 'topnav.php';
 
 <div>
     <i class="fas fa-table"></i> Passenger Records
-</div> 
+</div>
+
+<br> </br>

@@ -19,7 +19,7 @@ include 'topnav.php';?>
                 </tr>
             </thead>
             <tbody>
-                                 <?php                  
+                <?php                  
                 $query = 'SELECT * FROM route';
                     $result = mysqli_query($db, $query) or die (mysqli_error($db));
                   

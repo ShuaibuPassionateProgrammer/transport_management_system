@@ -14,7 +14,6 @@
     <link href="css/sb-admin.css" rel="stylesheet">
     <title>Admin Dashboard | Register</title>
 </head>
-<body>
-    //
+<body class="bg-dark" style="background-image: linear-gradient(gray, #2144);">
 </body>
 </html>

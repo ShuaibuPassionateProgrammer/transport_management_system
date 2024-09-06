@@ -17,7 +17,7 @@ include 'topnav.php';?>
                     <th>Finish</th>
                     <th>Option</th>
                 </tr>
-                                </thead>
+            </thead>
                                 <tbody>
                                  <?php                  
                 $query = 'SELECT * FROM route';

@@ -11,12 +11,12 @@ include 'topnav.php';?>
     <div class="table-responsive">
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead>
-                                    <tr>
-                                        <th>Fair</th>
-                                        <th>Start</th>
-                                        <th>Finish</th>
-                                        <th>Option</th>
-                                    </tr>
+                <tr>
+                    <th>Fair</th>
+                    <th>Start</th>
+                    <th>Finish</th>
+                    <th>Option</th>
+                </tr>
                                 </thead>
                                 <tbody>
                                  <?php                  

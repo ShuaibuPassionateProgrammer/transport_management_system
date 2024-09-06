@@ -8,3 +8,5 @@ include 'topnav.php';
 </div>
 
 <br></br>
+
+<div class="table-responsive"></div>

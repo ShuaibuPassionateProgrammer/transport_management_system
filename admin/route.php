@@ -35,11 +35,10 @@ include 'topnav.php';?>
                     echo ' <a  type="button" class="btn btn-xs btn-danger" href="routedel.php?type=route&delete & id=' . $row['ROUTE_ID'] . '" onclick="return confirm(\'Are you sure, you want to Delete a Route\');">DELETE </a> </td>';
                     echo '</tr> ';
                 }
-            ?> 
-                                    
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+            ?>                         
+            </tbody>
+        </table>
+    </div>
+</div>
 
                     <?php include 'footer.php'; ?>

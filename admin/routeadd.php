@@ -5,12 +5,13 @@ include 'topnav.php';
 
 <div class="col-lg-12"><div> 
             <i class="fas fa-table"></i>
-
-               Route Records  <a href="routeadd.php?action=add" type="button" class="btn btn-xs btn-primary">Add New</a>
-            </div>  <br> </br>
+            Route Records  <a href="routeadd.php?action=add" type="button" class="btn btn-xs btn-primary">Add New</a>
+        </div> 
+        
+        <br></br>
                                 
-                        <div class="table-responsive">
-                           <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                                     <tr>
                                         <th>Fair</th>

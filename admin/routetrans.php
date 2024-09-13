@@ -3,10 +3,10 @@
 
 
  <div class="col-lg-12">
-    <?php
-            $fr= $_POST['FAIR'];
-            $str= $_POST['START'];
-            $fsh= $_POST['FINISH'];
+<?php
+$fr= $_POST['FAIR'];
+$str= $_POST['START'];
+$fsh= $_POST['FINISH'];
             
             
     

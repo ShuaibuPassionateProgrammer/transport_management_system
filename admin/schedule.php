@@ -4,8 +4,8 @@ include 'topnav.php';
 ?>
 
 <div class="col-lg-12">
-                       <div>
-            <i class="fas fa-table"></i>
+    <div>
+        <i class="fas fa-table"></i>
 
             Schedule Records  <a href="scheduleadd.php?action=add" type="button" class="btn btn-xs btn-primary">Add New</a>
             </div>    

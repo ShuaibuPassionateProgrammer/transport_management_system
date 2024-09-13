@@ -8,8 +8,7 @@ $zz = $_POST['id'];
 $fr = $_POST['FAIR'];
 $str = $_POST['START'];
 $fsh = $_POST['FINISH'];
-			
-		
+					
 $query = 'UPDATE route set FAIR ="'.$fr.'",START ="'.$str.'",FINISH ="'.$fsh.'"
     WHERE
     ROUTE_ID="'.$zz.'"';

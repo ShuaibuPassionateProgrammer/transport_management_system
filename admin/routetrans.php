@@ -15,8 +15,8 @@
             break;        
         }
     ?>
-    	<script type="text/javascript">
-			alert("Successfully added.");
-			window.location = "route.php";
-		</script>
+    <script type="text/javascript">
+        alert("Successfully added.");
+        window.location = "route.php";
+    </script>
                     </div>

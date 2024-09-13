@@ -20,8 +20,7 @@ include 'topnav.php'
                 $b=$row['FINISH'];
             }
             
-            $id = $_GET['id'];
-                    
+            $id = $_GET['id']; 
             ?>
 
 

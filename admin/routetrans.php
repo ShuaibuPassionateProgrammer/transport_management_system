@@ -7,9 +7,7 @@
     $fr= $_POST['FAIR'];
     $str= $_POST['START'];
     $fsh= $_POST['FINISH'];
-            
-            
-    
+
     switch($_GET['action']){
         case 'add':			
             $query = "INSERT INTO route (FAIR,START,FINISH) VALUES ('".$fr."','".$str."','".$fsh."')";

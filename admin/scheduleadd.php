@@ -7,42 +7,42 @@ include 'topnav.php';
     <div class="card card-register mx-auto mt-5">
         <div class="card-header"><h2>Add Schedule Record</h2> </div>
         <div class="card-body">
-                        <form role="form" method="post" action="scheduletrans.php?action=add">
-                            <div class="form-group">
-                              <label for="Departure">Departure</label>
-                              <input type="datetime-local" class="form-control" placeholder="Departure" name="DEPARTURE">
-                            </div>
-                            <div class="form-group">
-                              <label for="Arrival">Arrival</label>
-                              <input type="datetime-local" class="form-control" placeholder="Arrival" name="ARRIVAL">
-                            </div>
-
-                            <div class="form-group">
-                              <label for="Vehicle">Vehicle</label>
-                              <select name="BUS_ID" class="form-control">
-                                <option selected disabled>-- Select a Vehicle --</option>
-                                <?php
-                                $sql = "SELECT BUS_ID, BUS_NAME FROM bus";
-                                $query = mysqli_query($db, $sql);
-                                if(mysqli_num_rows($query) > 0) {
-                                  while($row = mysqli_fetch_assoc($query)) {
-                                    ?><option value="<?php echo $row['BUS_ID'];?>"><?php echo $row['BUS_NAME'];?></option> <?php
-                                  }
-                                }
-                                else {
-                                  ?><option disabled value="0"><?php echo "Bus ID not found!";?></option> <?php
-                                }
-                                ?>
-                              </select>
-                            </div> 
-                           
-                            <button type="submit" class="btn btn-primary">Add Schedule</button>
-                            <button type="reset" class="btn btn-danger">Clear Entry</button>
-
-
-                      </form>  
-                    </div>
+            <form role="form" method="post" action="scheduletrans.php?action=add">
+                <div class="form-group">
+                    <label for="Departure">Departure</label>
+                    <input type="datetime-local" class="form-control" placeholder="Departure" name="DEPARTURE">
                 </div>
+                <div class="form-group">
+                    <label for="Arrival">Arrival</label>
+                    <input type="datetime-local" class="form-control" placeholder="Arrival" name="ARRIVAL">
+                </div>
+
+                <div class="form-group">
+                    <label for="Vehicle">Vehicle</label>
+                    <select name="BUS_ID" class="form-control">
+                    <option selected disabled>-- Select a Vehicle --</option>
+                    <?php
+                    $sql = "SELECT BUS_ID, BUS_NAME FROM bus";
+                    $query = mysqli_query($db, $sql);
+                    if(mysqli_num_rows($query) > 0) {
+                        while($row = mysqli_fetch_assoc($query)) {
+                        ?><option value="<?php echo $row['BUS_ID'];?>"><?php echo $row['BUS_NAME'];?></option> <?php
+                        }
+                    }
+                    else {
+                        ?><option disabled value="0"><?php echo "Bus ID not found!";?></option> <?php
+                    }
+                    ?>
+                    </select>
+                </div> 
+                
+                <button type="submit" class="btn btn-primary">Add Schedule</button>
+                <button type="reset" class="btn btn-danger">Clear Entry</button>
+
+
+            </form>  
+                </div>
+            </div>
 
         </div>
         <!-- /.container-fluid -->

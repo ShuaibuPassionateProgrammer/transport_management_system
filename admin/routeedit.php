@@ -19,7 +19,7 @@ include 'topnav.php'; ?>
                 
         ?>
 
-             <div class="col-lg-12 p-4">
+            <div class="col-lg-12 p-4">
                   <h2>Edit Records</h2>
 
                         <form role="form" method="post" action="routeedit1.php">

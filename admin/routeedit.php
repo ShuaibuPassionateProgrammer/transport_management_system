@@ -22,23 +22,23 @@ include 'topnav.php'; ?>
             <div class="col-lg-12 p-4">
                 <h2>Edit Records</h2>
 
-                        <form role="form" method="post" action="routeedit1.php">
-                            
-                            <div class="form-group">
-                                <input type="hidden" name="id" value="<?php echo $zz; ?>" />
-                            </div>
-                            <div class="form-group">
-                              <input class="form-control" placeholder="Fair" name="FAIR" value="<?php echo $i; ?>">
-                            </div>
-                             <div class="form-group">
-                              <input class="form-control" placeholder="Start" name="START" value="<?php echo $a; ?>">
-                            </div>
-                             <div class="form-group">
-                              <input class="form-control" placeholder="Finish" name="FINISH" value="<?php echo $b; ?>">
-                            </div>
-                             
-                            <button type="submit" class="btn btn-primary">Update Record</button>
-                      </form>  
+                <form role="form" method="post" action="routeedit1.php">
+                    
+                    <div class="form-group">
+                        <input type="hidden" name="id" value="<?php echo $zz; ?>" />
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Fair" name="FAIR" value="<?php echo $i; ?>">
+                    </div>
+                        <div class="form-group">
+                        <input class="form-control" placeholder="Start" name="START" value="<?php echo $a; ?>">
+                    </div>
+                        <div class="form-group">
+                        <input class="form-control" placeholder="Finish" name="FINISH" value="<?php echo $b; ?>">
+                    </div>
+                        
+                    <button type="submit" class="btn btn-primary">Update Record</button>
+                </form>  
                     
                 </div>
                 

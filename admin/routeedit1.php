@@ -4,10 +4,10 @@ include 'topnav.php';
 ?>
 <body>
 <?php
-			$zz = $_POST['id'];
-			$fr = $_POST['FAIR'];
-			$str = $_POST['START'];
-		   	$fsh = $_POST['FINISH'];
+$zz = $_POST['id'];
+$fr = $_POST['FAIR'];
+$str = $_POST['START'];
+$fsh = $_POST['FINISH'];
 			
 		
 	 			$query = 'UPDATE route set FAIR ="'.$fr.'",START ="'.$str.'",FINISH ="'.$fsh.'"

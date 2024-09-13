@@ -32,7 +32,7 @@ include 'topnav.php'; ?>
                 <div class="form-group">
                     <input class="form-control" placeholder="Start" name="START" value="<?php echo $a; ?>">
                 </div>
-                    <div class="form-group">
+                <div class="form-group">
                     <input class="form-control" placeholder="Finish" name="FINISH" value="<?php echo $b; ?>">
                 </div>
                     

@@ -39,9 +39,6 @@ include 'topnav.php'
                     <input class="form-control" placeholder="Finish" name="FINISH" value="<?php echo $b; ?>">
                 </div>
                 <button type="submit" class="btn btn-outline-primary">Return to main menu</button>
-                
-
-
             </form>  
         </div>
     </div>                

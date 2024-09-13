@@ -20,23 +20,23 @@ include 'topnav.php';
                 <div class="form-group">
                     <label for="Vehicle">Vehicle</label>
                     <select name="BUS_ID" class="form-control">
-                    <option selected disabled>-- Select a Vehicle --</option>
-                    <?php
-                    $sql = "SELECT BUS_ID, BUS_NAME FROM bus";
-                    $query = mysqli_query($db, $sql);
-                    if(mysqli_num_rows($query) > 0) {
-                        while($row = mysqli_fetch_assoc($query)) {
-                        ?>
-                            <option value="<?php echo $row['BUS_ID'];?>">
-                                <?php echo $row['BUS_NAME'];?>
-                            </option>
-                            <?php
+                        <option selected disabled>-- Select a Vehicle --</option>
+                        <?php
+                        $sql = "SELECT BUS_ID, BUS_NAME FROM bus";
+                        $query = mysqli_query($db, $sql);
+                        if(mysqli_num_rows($query) > 0) {
+                            while($row = mysqli_fetch_assoc($query)) {
+                            ?>
+                                <option value="<?php echo $row['BUS_ID'];?>">
+                                    <?php echo $row['BUS_NAME'];?>
+                                </option>
+                                <?php
+                            }
                         }
-                    }
-                    else {
-                        ?><option disabled value="0"><?php echo "Bus ID not found!";?></option> <?php
-                    }
-                    ?>
+                        else {
+                            ?><option disabled value="0"><?php echo "Bus ID not found!";?></option> <?php
+                        }
+                        ?>
                     </select>
                 </div> 
                 

@@ -1,4 +1,5 @@
-<?php include 'connection.php';
+<?php 
+include 'connection.php';
 include 'topnav.php'; ?>
 
          <div class="col-lg-12">

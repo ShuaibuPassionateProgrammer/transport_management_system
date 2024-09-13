@@ -19,4 +19,4 @@
         alert("Successfully added.");
         window.location = "route.php";
     </script>
-                    </div>
+</div>

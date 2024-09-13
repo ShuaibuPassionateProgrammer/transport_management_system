@@ -6,7 +6,6 @@ include('header.php');
 <body>
     <?php
     if (!isset($_GET['do']) || $_GET['do'] != 1) {
-                        
 
     switch ($_GET['type']) {
         case 'schedule':

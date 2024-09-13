@@ -7,8 +7,8 @@ include 'topnav.php';
     <div>
         <i class="fas fa-table"></i>
 
-            Schedule Records  <a href="scheduleadd.php?action=add" type="button" class="btn btn-xs btn-primary">Add New</a>
-            </div>    
+    Schedule Records  <a href="scheduleadd.php?action=add" type="button" class="btn btn-xs btn-primary">Add New</a>
+    </div>    
 
                         <br> </br>       
                         <div class="table-responsive">

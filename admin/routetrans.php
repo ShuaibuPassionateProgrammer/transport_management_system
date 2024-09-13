@@ -12,10 +12,8 @@
     
     switch($_GET['action']){
         case 'add':			
-                $query = "INSERT INTO route
-                (FAIR,START,FINISH)
-                VALUES ('".$fr."','".$str."','".$fsh."')";
-                mysqli_query($db,$query)or die (mysqli_error($db));;
+            $query = "INSERT INTO route (FAIR,START,FINISH) VALUES ('".$fr."','".$str."','".$fsh."')";
+            mysqli_query($db,$query)or die (mysqli_error($db));;
             
         break;
                     

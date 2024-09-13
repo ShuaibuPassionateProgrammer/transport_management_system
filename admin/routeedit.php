@@ -33,7 +33,6 @@ include 'topnav.php'; ?>
                 <div class="form-group">
                     <input class="form-control" placeholder="Finish" name="FINISH" value="<?php echo $b; ?>">
                 </div>
-                    
                 <button type="submit" class="btn btn-primary">Update Record</button>
             </form>         
         </div>

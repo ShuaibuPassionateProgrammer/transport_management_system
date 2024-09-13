@@ -16,5 +16,5 @@ $result = mysqli_query($db, $query) or die(mysqli_error($db));
 	<script type="text/javascript">
 			alert("Update Successfull.");
 			window.location = "route.php";
-		</script>
+	</script>
 <?php include 'footer.php'; ?>

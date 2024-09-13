@@ -28,7 +28,8 @@ include 'topnav.php';
                         while($row = mysqli_fetch_assoc($query)) {
                         ?>
                             <option value="<?php echo $row['BUS_ID'];?>">
-                            <?php echo $row['BUS_NAME'];?></option>
+                                <?php echo $row['BUS_NAME'];?>
+                            </option>
                             <?php
                         }
                     }

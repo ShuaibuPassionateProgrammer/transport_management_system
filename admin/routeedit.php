@@ -15,8 +15,7 @@ include 'topnav.php'; ?>
             $b= $row['FINISH'];
         }
                     
-        $id = $_GET['id'];
-                
+        $id = $_GET['id'];     
         ?>
 
         <div class="col-lg-12 p-4">

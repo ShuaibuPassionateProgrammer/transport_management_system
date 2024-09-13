@@ -40,8 +40,8 @@ include 'topnav.php'; ?>
             </form>         
         </div>
             
-        </div>
-        <!-- /.container-fluid -->
+    </div>
+    <!-- /.container-fluid -->
 
         </div>
         <?php include 'footer.php'; ?>

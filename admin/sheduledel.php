@@ -5,9 +5,6 @@ include('header.php');
 
 <body>
     <?php
-
-        
-
     if (!isset($_GET['do']) || $_GET['do'] != 1) {
                         
 

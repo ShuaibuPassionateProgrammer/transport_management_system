@@ -1,5 +1,7 @@
-<?php include 'connection.php';
-include 'topnav.php'; ?>
+<?php 
+include 'connection.php';
+include 'topnav.php'; 
+?>
 <div class="contanier">
 <div class="card card-register mx-auto mt-5">
 <div class="card-header"><h2>Add Schedule Record</h2> </div>

@@ -1,8 +1,7 @@
 <?php
 include('connection.php');
-include('header.php');
-       
-        ?>  
+include('header.php');       
+?>
 
 <body>
 <?php

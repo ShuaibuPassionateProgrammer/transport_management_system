@@ -10,6 +10,7 @@ include 'topnav.php';
     </div>    
 
     <br></br>
+    
     <div class="table-responsive">
         <table class="table table-bordered table-hover table-striped">
             <thead>

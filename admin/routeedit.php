@@ -15,7 +15,7 @@ while($row = mysqli_fetch_array($result))
     $b= $row['FINISH'];
 }
               
-              $id = $_GET['id'];
+$id = $_GET['id'];
          
 ?>
 

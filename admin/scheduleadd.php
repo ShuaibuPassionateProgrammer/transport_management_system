@@ -30,7 +30,7 @@ include 'topnav.php';
                                 <option value="<?php echo $row['BUS_ID'];?>">
                                     <?php echo $row['BUS_NAME'];?>
                                 </option>
-                                <?php
+                            <?php
                             }
                         }
                         else {

@@ -24,27 +24,27 @@ include 'topnav.php'
             ?>
 
 
-                        <form role="form" method="post" action="route.php">
-                            
-                            <div class="form-group">
-                                <input type="hidden" name="id" value="<?php echo $zz; ?>" />
-                            </div>
-                            <div class="form-group">
-                              <input class="form-control" placeholder="Fair" name="FAIR" value="<?php echo $i; ?>">
-                            </div>
-                            <div class="form-group">
-                              <input class="form-control" placeholder="Start" name="START" value="<?php echo $a; ?>">
-                            </div> 
-                            <div class="form-group">
-                              <input class="form-control" placeholder="Finish" name="FINISH" value="<?php echo $b; ?>">
-                            </div>
-                            <button type="submit" class="btn btn-outline-primary">Return to main menu</button>
-                         
-
-
-                      </form>  
-                    </div>
+            <form role="form" method="post" action="route.php">
+                
+                <div class="form-group">
+                    <input type="hidden" name="id" value="<?php echo $zz; ?>" />
                 </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="Fair" name="FAIR" value="<?php echo $i; ?>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="Start" name="START" value="<?php echo $a; ?>">
+                </div> 
+                <div class="form-group">
+                    <input class="form-control" placeholder="Finish" name="FINISH" value="<?php echo $b; ?>">
+                </div>
+                <button type="submit" class="btn btn-outline-primary">Return to main menu</button>
+                
+
+
+            </form>  
+        </div>
+    </div>
                 
             </div>
             <!-- /.container-fluid -->

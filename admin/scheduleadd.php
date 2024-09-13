@@ -34,7 +34,9 @@ include 'topnav.php';
                             }
                         }
                         else {
-                            ?><option disabled value="0"><?php echo "Bus ID not found!";?></option> <?php
+                            ?>
+                            <option disabled value="0"><?php echo "Bus ID not found!";?></option>
+                            <?php
                         }
                         ?>
                     </select>

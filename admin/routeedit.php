@@ -39,7 +39,7 @@ include 'topnav.php'; ?>
                 <button type="submit" class="btn btn-primary">Update Record</button>
             </form>  
                 
-            </div>
+        </div>
             
         </div>
         <!-- /.container-fluid -->

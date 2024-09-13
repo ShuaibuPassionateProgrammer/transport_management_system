@@ -26,7 +26,8 @@ include 'topnav.php';
                     $query = mysqli_query($db, $sql);
                     if(mysqli_num_rows($query) > 0) {
                         while($row = mysqli_fetch_assoc($query)) {
-                        ?><option value="<?php echo $row['BUS_ID'];?>"><?php echo $row['BUS_NAME'];?></option> <?php
+                        ?>
+                        <option value="<?php echo $row['BUS_ID'];?>"><?php echo $row['BUS_NAME'];?></option> <?php
                         }
                     }
                     else {

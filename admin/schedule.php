@@ -26,18 +26,18 @@ include 'topnav.php';
                 $query = 'SELECT * FROM schedule';
                 $result = mysqli_query($db, $query) or die (mysqli_error($db));
 
-                    while ($row = mysqli_fetch_assoc($result)) {
-                                            
-                        echo '<tr>';
-                        echo '<td>'. $row['ARRIVAL'].'</td>';
-                        echo '<td>'. $row['DEPARTURE'].'</td>';
-                        echo '<td>'. $row['BUS_ID'].'</td>';
-                        
-                        echo '<td> <a type="button" class="btn btn-xs btn-primary" href="schedulesearch.php?action=edit & id='.$row['SCHEDULE_ID'] . '" > SEARCH </a> ';
-                        echo ' <a  type="button" class="btn btn-xs btn-warning" href="scheduleedit.php?action=edit & id='.$row['SCHEDULE_ID'] . '"> EDIT </a> ';
-                        echo ' <a  type="button" class="btn btn-xs btn-danger" href="scheduledel.php?type=schedule&delete & id='.$row['SCHEDULE_ID'] . '" onclick="return confirm(\'Are you sure, you want to Delete a Schedule\');">DELETE </a> </td>';
-                        echo '</tr> ';
-                }
+                while ($row = mysqli_fetch_assoc($result)) {
+                                        
+                    echo '<tr>';
+                    echo '<td>'. $row['ARRIVAL'].'</td>';
+                    echo '<td>'. $row['DEPARTURE'].'</td>';
+                    echo '<td>'. $row['BUS_ID'].'</td>';
+                    
+                    echo '<td> <a type="button" class="btn btn-xs btn-primary" href="schedulesearch.php?action=edit & id='.$row['SCHEDULE_ID'] . '" > SEARCH </a> ';
+                    echo ' <a  type="button" class="btn btn-xs btn-warning" href="scheduleedit.php?action=edit & id='.$row['SCHEDULE_ID'] . '"> EDIT </a> ';
+                    echo ' <a  type="button" class="btn btn-xs btn-danger" href="scheduledel.php?type=schedule&delete & id='.$row['SCHEDULE_ID'] . '" onclick="return confirm(\'Are you sure, you want to Delete a Schedule\');">DELETE </a> </td>';
+                    echo '</tr> ';
+            }
                 ?> 
                 
             </tbody>

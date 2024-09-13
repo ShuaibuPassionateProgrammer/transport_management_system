@@ -9,7 +9,7 @@ include 'topnav.php';
         Schedule Records  <a href="scheduleadd.php?action=add" type="button" class="btn btn-xs btn-primary">Add New</a>
     </div>    
 
-                        <br> </br>       
+    <br></br>       
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover table-striped">
                                 <thead>

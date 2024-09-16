@@ -23,7 +23,6 @@ include 'topnav.php'; ?>
             <div class="col-lg-12">
                 <h2>Edit Records</h2>
                 <div class="col-lg-6">
-
                     <form role="form" method="post" action="scheduleedit1.php">
                         <div class="form-group">
                             <input type="hidden" name="id" value="<?php echo $zz; ?>" />

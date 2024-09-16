@@ -16,4 +16,4 @@ include 'topnav.php';
         alert("Update Successfull.");
         window.location = "schedule.php";
 	</script>
- <?php include 'footer.php'; ?>
+<?php include 'footer.php'; ?>

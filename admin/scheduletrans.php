@@ -7,7 +7,6 @@
     $dpt= $_POST['DEPARTURE'];
     $bid= $_POST['BUS_ID'];
     
-    
     switch($_GET['action']){
         case 'add':			
             $query = "INSERT INTO schedule (ARRIVAL, DEPARTURE, BUS_ID) VALUES ('".$arvl."','".$dpt."','".$bid."')";

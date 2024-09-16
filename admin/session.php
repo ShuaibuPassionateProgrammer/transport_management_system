@@ -1,7 +1,6 @@
 <?php
 //before we store information of out member, we need to start frist the session
-
-		session_start(); 
+session_start(); 
 
 		//create a new function to check if the version variable member_id is not set
 		function logged_in(){

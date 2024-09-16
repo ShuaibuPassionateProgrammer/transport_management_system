@@ -10,9 +10,7 @@
     
     switch($_GET['action']){
         case 'add':			
-            $query = "INSERT INTO schedule
-            (ARRIVAL, DEPARTURE, BUS_ID)
-            VALUES ('".$arvl."','".$dpt."','".$bid."')";
+            $query = "INSERT INTO schedule (ARRIVAL, DEPARTURE, BUS_ID) VALUES ('".$arvl."','".$dpt."','".$bid."')";
             mysqli_query($db,$query)or die (mysqli_error($db));
         break;                
     }

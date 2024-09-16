@@ -19,7 +19,6 @@ include 'topnav.php'; ?>
         
         $id = $_GET['id'];
         ?>
-
             <div class="col-lg-12">
                 <h2>Edit Records</h2>
                 <div class="col-lg-6">

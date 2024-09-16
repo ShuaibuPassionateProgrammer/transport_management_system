@@ -9,19 +9,18 @@ include 'topnav.php'
         <div class="card-body">
 
         <?php
-        $query = 'SELECT * FROM schedule
-                    WHERE
-                    SCHEDULE_ID ='.$_GET['id'];
-                    $result = mysqli_query($db, $query) or die(mysqli_error($db));
-                    while($row = mysqli_fetch_array($result))
-                    {   
-                        $zz= $row['SCHEDULE_ID'];
-                        $i= $row['ARRIVAL'];
-                        $a=$row['DEPARTURE'];
-                        $b=$row['BUS_ID'];
-                    }
-                    
-                    $id = $_GET['id'];
+        $query = 'SELECT * FROM schedule WHERE SCHEDULE_ID ='.$_GET['id'];
+        $result = mysqli_query($db, $query) or die(mysqli_error($db));
+        
+        while($row = mysqli_fetch_array($result))
+        {   
+            $zz= $row['SCHEDULE_ID'];
+            $i= $row['ARRIVAL'];
+            $a=$row['DEPARTURE'];
+            $b=$row['BUS_ID'];
+        }
+        
+        $id = $_GET['id'];
                 
         ?>
 

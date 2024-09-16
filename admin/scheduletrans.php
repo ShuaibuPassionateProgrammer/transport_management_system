@@ -23,4 +23,4 @@
         alert("Successfully added.");
         window.location = "schedule.php";
     </script>
-                    </div>
+</div>

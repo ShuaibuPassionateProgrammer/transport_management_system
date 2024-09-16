@@ -21,7 +21,6 @@ include 'topnav.php'
         }
         
         $id = $_GET['id'];
-                
         ?>
 
 

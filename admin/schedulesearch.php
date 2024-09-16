@@ -24,30 +24,30 @@ include 'topnav.php'
         ?>
 
 
-                        <form role="form" method="post" action="schedule.php">
-                            
-                            <div class="form-group">
-                                <input type="hidden" name="id" value="<?php echo $zz; ?>" />
-                            </div>
-                            <div class="form-group">
-                              <input class="form-control" placeholder="Arrival" name="ARRIVAL" value="<?php echo $i; ?>">
-                            </div>
-                            <div class="form-group">
-                              <input class="form-control" placeholder="Departure" name="DEPARTURE" value="<?php echo $a; ?>">
-                            </div> 
-                            <div class="form-group">
-                              <input class="form-control" placeholder="Bus ID" name="BUS_ID" value="<?php echo $b; ?>">
-                            </div>
-                            <button type="submit" class="btn btn-outline-primary">Return to main menu</button>
-                         
-
-
-                      </form>  
-                    </div>
-                </div>
+            <form role="form" method="post" action="schedule.php">
                 
-            </div>
-            <!-- /.container-fluid -->
+                <div class="form-group">
+                    <input type="hidden" name="id" value="<?php echo $zz; ?>" />
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="Arrival" name="ARRIVAL" value="<?php echo $i; ?>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="Departure" name="DEPARTURE" value="<?php echo $a; ?>">
+                </div> 
+                <div class="form-group">
+                    <input class="form-control" placeholder="Bus ID" name="BUS_ID" value="<?php echo $b; ?>">
+                </div>
+                <button type="submit" class="btn btn-outline-primary">Return to main menu</button>
+                
+
+
+            </form>  
+        </div>
+    </div>
+    
+</div>
+<!-- /.container-fluid -->
 
         </div>
         <!-- /#page-wrapper -->

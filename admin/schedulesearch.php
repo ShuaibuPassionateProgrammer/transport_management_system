@@ -4,9 +4,9 @@ include 'topnav.php'
 ?>
 
 <div class="contanier">
-<div class="card card-register mx-auto mt-5">
-<div class="card-header"> <h2>Check Record</h2> </div>
-<div class="card-body">
+    <div class="card card-register mx-auto mt-5">
+        <div class="card-header"> <h2>Check Record</h2> </div>
+        <div class="card-body">
 
 <?php
 $query = 'SELECT * FROM schedule

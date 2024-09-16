@@ -15,8 +15,7 @@
                 VALUES ('".$arvl."','".$dpt."','".$bid."')";
                 mysqli_query($db,$query)or die (mysqli_error($db));
             
-        break;
-                    
+        break;                
     }
     ?>
     <script type="text/javascript">

@@ -6,6 +6,7 @@ session_start();
 function logged_in(){
     return isset($_SESSION['MEMBER_ID']);
 }
+
 //this function if seesion member is not set then it will be redirected to index.php
 function confirm_logged_in(){
     if (!logged_in()) {?>

@@ -8,16 +8,16 @@
     $bid= $_POST['BUS_ID'];
     
     
-        switch($_GET['action']){
-            case 'add':			
-                    $query = "INSERT INTO schedule
-                    (ARRIVAL, DEPARTURE, BUS_ID)
-                    VALUES ('".$arvl."','".$dpt."','".$bid."')";
-                    mysqli_query($db,$query)or die (mysqli_error($db));
-                
-            break;
-                        
-            }
+    switch($_GET['action']){
+        case 'add':			
+                $query = "INSERT INTO schedule
+                (ARRIVAL, DEPARTURE, BUS_ID)
+                VALUES ('".$arvl."','".$dpt."','".$bid."')";
+                mysqli_query($db,$query)or die (mysqli_error($db));
+            
+        break;
+                    
+    }
     ?>
     <script type="text/javascript">
         alert("Successfully added.");

@@ -20,36 +20,31 @@ include 'topnav.php'; ?>
         $id = $_GET['id'];
         ?>
 
-             <div class="col-lg-12">
-                  <h2>Edit Records</h2>
-                      <div class="col-lg-6">
+            <div class="col-lg-12">
+                <h2>Edit Records</h2>
+                <div class="col-lg-6">
 
-                        <form role="form" method="post" action="scheduleedit1.php">
-                            
-                            <div class="form-group">
-                                <input type="hidden" name="id" value="<?php echo $zz; ?>" />
-                            </div>
-                            <div class="form-group">
-                              <input class="form-control" placeholder="Arrival" name="ARRIVAL" value="<?php echo $i; ?>">
-                            </div>
-                            <div class="form-group">
-                              <input class="form-control" placeholder="Departure" name="DEPARTURE" value="<?php echo $a; ?>">
-                            </div> 
-                            <div class="form-group">
-                              <input class="form-control" placeholder="Bus ID" name="BUS_ID" value="<?php echo $b; ?>">
-                            </div>
+                    <form role="form" method="post" action="scheduleedit1.php">
+                        
+                        <div class="form-group">
+                            <input type="hidden" name="id" value="<?php echo $zz; ?>" />
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Arrival" name="ARRIVAL" value="<?php echo $i; ?>">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Departure" name="DEPARTURE" value="<?php echo $a; ?>">
+                        </div> 
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Bus ID" name="BUS_ID" value="<?php echo $b; ?>">
+                        </div>
 
-                            <button type="submit" class="btn btn-primary">Update Record</button>
-                            <br></br>
-                         
-
-
-                      </form>  
-                    </div>
+                        <button type="submit" class="btn btn-primary">Update Record</button>
+                        <br></br>
+                    </form>  
                 </div>
-                
-            </div>
-            <!-- /.container-fluid -->
-
+            </div>    
         </div>
-        <?php include 'footer.php'; ?>
+        <!-- /.container-fluid -->
+    </div>
+<?php include 'footer.php'; ?>

@@ -5,7 +5,6 @@ session_start();
 //create a new function to check if the version variable member_id is not set
 function logged_in(){
     return isset($_SESSION['MEMBER_ID']);
-
 }
 		//this function if seesion member is not set then it will be redirected to index.php
 		function confirm_logged_in(){

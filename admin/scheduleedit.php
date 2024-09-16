@@ -36,7 +36,6 @@ include 'topnav.php';
                         <div class="form-group">
                             <input class="form-control" placeholder="Bus ID" name="BUS_ID" value="<?php echo $b; ?>">
                         </div>
-
                         <button type="submit" class="btn btn-primary">Update Record</button>
                         <br></br>
                     </form>  

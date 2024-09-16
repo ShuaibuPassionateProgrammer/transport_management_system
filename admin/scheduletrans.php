@@ -1,7 +1,7 @@
 <?php include'header.php'; ?>
 <?php include'connection.php'; ?>
 
- <div class="col-lg-12">
+<div class="col-lg-12">
                 <?php
 						$arvl= $_POST['ARRIVAL'];
 					    $dpt= $_POST['DEPARTURE'];

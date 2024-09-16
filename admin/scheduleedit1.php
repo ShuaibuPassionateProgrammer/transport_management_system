@@ -13,7 +13,7 @@ include 'topnav.php';
     $result = mysqli_query($db, $query) or die(mysqli_error($db));                            
     ?>	
 	<script type="text/javascript">
-			alert("Update Successfull.");
-			window.location = "schedule.php";
+        alert("Update Successfull.");
+        window.location = "schedule.php";
 	</script>
  <?php include 'footer.php'; ?>

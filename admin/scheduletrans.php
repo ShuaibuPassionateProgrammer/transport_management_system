@@ -3,10 +3,10 @@
 
 <div class="col-lg-12">
     <?php
-            $arvl= $_POST['ARRIVAL'];
-            $dpt= $_POST['DEPARTURE'];
-            $bid= $_POST['BUS_ID'];
-            
+    $arvl= $_POST['ARRIVAL'];
+    $dpt= $_POST['DEPARTURE'];
+    $bid= $_POST['BUS_ID'];
+    
     
         switch($_GET['action']){
             case 'add':			

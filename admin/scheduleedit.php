@@ -1,6 +1,7 @@
 <?php 
 include 'connection.php';
-include 'topnav.php'; ?>
+include 'topnav.php'; 
+?>
 
 <div class="contanier">
     <div class="card card-register mx-auto mt-5">

@@ -8,9 +8,8 @@ include 'topnav.php';
     $arvl = $_POST['ARRIVAL'];
     $dpt = $_POST['DEPARTURE'];
     $bid= $_POST['BUS_ID'];
-                
-            
-                    $query = 'UPDATE schedule set ARRIVAL ="'.$arvl.'",
+        
+    $query = 'UPDATE schedule set ARRIVAL ="'.$arvl.'",
                         DEPARTURE ="'.$dpt.'", BUS_ID="'.$bid.'" WHERE
                         SCHEDULE_ID ="'.$zz.'"';
                         $result = mysqli_query($db, $query) or die(mysqli_error($db));

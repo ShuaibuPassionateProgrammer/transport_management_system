@@ -23,7 +23,6 @@ include 'topnav.php'
             $id = $_GET['id'];
             ?>
 
-
             <form role="form" method="post" action="schedule.php">
                 
                 <div class="form-group">

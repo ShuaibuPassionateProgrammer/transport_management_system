@@ -27,11 +27,6 @@
         </li>
         
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="route.php">
-            <i class="fas fa-fw fa-route   "></i>
-            <span>Route</span></a>
-        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="schedule.php">
             <i class="fas fa-fw fa-clock  "></i>

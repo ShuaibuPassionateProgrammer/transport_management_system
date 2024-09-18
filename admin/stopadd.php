@@ -32,8 +32,6 @@ include 'topnav.php';
                 
                 <button type="submit" class="btn btn-primary">Add Stop</button>
                 <button type="reset" class="btn btn-danger">Clear Entry</button>
-
-
             </form>  
         </div>
     </div>

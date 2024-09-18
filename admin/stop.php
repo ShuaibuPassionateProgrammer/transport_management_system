@@ -12,15 +12,15 @@ include 'topnav.php';
     <br></br>
     
     <div class="table-responsive">
-                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                <thead>
-                                    <tr>
-                                        <th>Location Name</th>
-                                        <th>Route ID</th>
-                                        <th>Options</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Location Name</th>
+                    <th>Route ID</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody>
                                  <?php                  
                 $query = 'SELECT * FROM stop';
                     $result = mysqli_query($db, $query) or die (mysqli_error($db));

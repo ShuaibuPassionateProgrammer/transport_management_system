@@ -2,16 +2,16 @@
 include 'connection.php';
 include 'topnav.php'; 
 ?>
-           <div class="col-lg-12">
 
-            <div>
-            <i class="fas fa-table"></i>
+<div class="col-lg-12">
+    <div>
+        <i class="fas fa-table"></i>
+        Stops Records  <a href="stopadd.php?action=add" type="button" class="btn btn-xs btn-primary">Add New</a>
+    </div>    
 
-            Stops Records  <a href="stopadd.php?action=add" type="button" class="btn btn-xs btn-primary">Add New</a>
-            </div>    
-
-          <br> </br>
-                        <div class="table-responsive">
+    <br></br>
+    
+    <div class="table-responsive">
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>

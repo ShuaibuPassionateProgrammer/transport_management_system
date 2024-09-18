@@ -3,9 +3,9 @@ include 'connection.php';
 include 'topnav.php'; ?>
 
 <div class="contanier"> 
-<div class="card card-register mx-auto mt-5">
-<div class="card-header"><h2>Add new Stop</h2> </div>
-<div class="card-body">
+    <div class="card card-register mx-auto mt-5">
+        <div class="card-header"><h2>Add new Stop</h2> </div>
+        <div class="card-body">
                  
 
                         <form role="form" method="post" action="stoptrans.php?action=add">

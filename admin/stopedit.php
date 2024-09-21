@@ -15,7 +15,7 @@ include 'topnav.php'; ?>
             $a=$row['ROUTE_ID'];
         }
                     
-                    $id = $_GET['id'];
+        $id = $_GET['id'];
                 
         ?>
 

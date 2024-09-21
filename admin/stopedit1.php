@@ -13,7 +13,7 @@ include 'topnav.php';
                                 
     ?>	
 	<script type="text/javascript">
-			alert("Update Successfull.");
-			window.location = "stop.php";
-		</script>
+        alert("Update Successfull.");
+        window.location = "stop.php";
+	</script>
  <?php include 'footer.php'; ?>

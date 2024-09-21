@@ -9,12 +9,13 @@ include 'topnav.php'; ?>
                     WHERE
                     LOCATION_ID ='.$_GET['id'];
                     $result = mysqli_query($db, $query) or die(mysqli_error($db));
-                    while($row = mysqli_fetch_array($result))
-                    {   
-                        $zz= $row['LOCATION_ID'];
-                        $i= $row['LOCATION_NAME'];
-                        $a=$row['ROUTE_ID'];
-                    }
+                    
+        while($row = mysqli_fetch_array($result))
+        {   
+            $zz= $row['LOCATION_ID'];
+            $i= $row['LOCATION_NAME'];
+            $a=$row['ROUTE_ID'];
+        }
                     
                     $id = $_GET['id'];
                 

@@ -37,10 +37,7 @@ include 'topnav.php'; ?>
 
                     
                     <button type="submit" class="btn btn-default">Update Record</button>
-                        <br></br>
-                    
-
-
+                    <br></br>
                 </form>  
             </div>
         </div>

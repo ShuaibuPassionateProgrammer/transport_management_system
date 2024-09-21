@@ -35,7 +35,6 @@ include 'topnav.php'; ?>
                         <input class="form-control" placeholder="Route ID" name="ROUTE_ID" value="<?php echo $a; ?>">
                     </div>
 
-                    
                     <button type="submit" class="btn btn-default">Update Record</button>
                     <br></br>
                 </form>  

@@ -6,9 +6,10 @@ session_start();
 $user = trim($_POST['user']);
 $upass = trim($_POST['pass']);
 $h_pass = MD5($upass);
-    //create some sql statement
-    $sql = "SELECT * FROM `admin` WHERE `user` = '" .$user. "' AND `password` = '" . $h_pass . "' ";
-    $result = $db->query($sql);
+
+//create some sql statement
+$sql = "SELECT * FROM `admin` WHERE `user` = '" .$user. "' AND `password` = '" . $h_pass . "' ";
+$result = $db->query($sql);
 
     //get the number of result based n the sql statement
     //check the number of result, if equal to one

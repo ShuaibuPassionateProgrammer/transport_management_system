@@ -7,7 +7,7 @@
     $rid= $_POST['ROUTE_ID'];    
 
     switch($_GET['action']){
-        case 'add':			
+        case 'add':
                 $query = "INSERT INTO stop
                 (LOCATION_NAME,ROUTE_ID)
                 VALUES ('".$ln."','".$rid."')";

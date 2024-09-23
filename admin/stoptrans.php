@@ -17,4 +17,4 @@
         alert("Successfully added.");
         window.location = "stop.php";
     </script>
-                </div>
+</div>

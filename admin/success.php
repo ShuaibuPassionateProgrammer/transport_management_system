@@ -22,7 +22,8 @@ if($result->num_rows > 0){
     $_SESSION['MEMBER_ID'] = $found_user['id'];
     $_SESSION['fname'] = $found_user['fname'];
     $_SESSION['lname'] = $found_user['lname'];
-$_SESSION['position'] = $found_user['status'];
+    $_SESSION['position'] = $found_user['status'];
+    
     if ($_SESSION['position']=='ADMIN') {
     # code...
 ?> <script type="text/javascript">

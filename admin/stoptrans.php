@@ -8,12 +8,9 @@
 
     switch($_GET['action']){
         case 'add':
-                $query = "INSERT INTO stop
-                (LOCATION_NAME,ROUTE_ID)
-                VALUES ('".$ln."','".$rid."')";
-                mysqli_query($db,$query)or die (mysqli_error($db));
-            
-        break;
+            $query = "INSERT INTO stop (LOCATION_NAME,ROUTE_ID) VALUES ('".$ln."','".$rid."')";
+            mysqli_query($db,$query)or die (mysqli_error($db));
+            break;
                     
     }
     ?>

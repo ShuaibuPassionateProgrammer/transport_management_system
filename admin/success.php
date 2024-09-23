@@ -26,16 +26,20 @@ if($result->num_rows > 0){
     
     if ($_SESSION['position']=='ADMIN') {
     # code...
-?> <script type="text/javascript">
-        //then it will be redirected to index.php
-        window.location = "index.php"
+?>
+<script type="text/javascript">
+    //then it will be redirected to index.php
+    window.location = "index.php"
 </script>
 <?php
-    }else{
-    ?> <script type="text/javascript">
+    }
+    else
+    {
+    ?>
+    <script type="text/javascript">
         //then it will be redirected to index.php
         window.location = "homepage.php"
-</script>
+    </script>
 <?php
     }
 

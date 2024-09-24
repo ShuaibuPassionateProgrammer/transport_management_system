@@ -3,6 +3,7 @@ $servername = "127.0.0.1";
 $username = "root";
 $Password ="";
 $dbname = "busscheduledb";
+
 $firstname=$_POST['firstname'];
 $lastname=$_POST['lastname'];
 $user=$_POST['email'];

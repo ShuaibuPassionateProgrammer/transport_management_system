@@ -116,9 +116,8 @@ confirm_logged_in();
                             echo '<td>'. $row['DRIVER_ID'].'</td>';
                             echo '</tr> ';
                         }
-                    ?> 
-                                    
-                                </tbody>
-                            </table>
-                        </div>
+                    ?>                 
+                    </tbody>
+                </table>
+            </div>
 <?php include 'footer.php'; ?>

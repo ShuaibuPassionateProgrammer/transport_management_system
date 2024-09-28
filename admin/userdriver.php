@@ -89,15 +89,11 @@ confirm_logged_in();
       </ul>
 
       <div id="content-wrapper">
-
         <div class="container-fluid">
           <!-- Breadcrumbs-->
            <div class="col-lg-12"><div>
             <i class="fas fa-table"></i>
-
-               
                 </div>    
-
                     <br> </br>      
                     <div class="table-responsive">
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">

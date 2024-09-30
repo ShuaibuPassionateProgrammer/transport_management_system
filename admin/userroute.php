@@ -108,21 +108,20 @@ confirm_logged_in();
                         </tr>
                     </thead>
                 <tbody>
-                    <?php                  
-$query = 'SELECT * FROM route';
-    $result = mysqli_query($db, $query) or die (mysqli_error($db));
+                    <?php
+                    $query = 'SELECT * FROM route';
+                    $result = mysqli_query($db, $query) or die (mysqli_error($db));
     
-        while ($row = mysqli_fetch_assoc($result)) {
-
-            echo '<tr>';
-            
-            echo '<td>'. $row['FAIR'].'</td>';
-                            echo '<td>'. $row['START'].'</td>';
-                            echo '<td>'. $row['FINISH'].'</td>';
-                                             
-                            echo '</tr> ';
-                }
-            ?> 
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        echo '<tr>';
+                        
+                        echo '<td>'. $row['FAIR'].'</td>';
+                        echo '<td>'. $row['START'].'</td>';
+                        echo '<td>'. $row['FINISH'].'</td>';
+                                        
+                        echo '</tr> ';
+                    }
+                    ?> 
                                     
                                 </tbody>
                             </table>

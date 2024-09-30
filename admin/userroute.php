@@ -122,10 +122,9 @@ confirm_logged_in();
                         echo '</tr> ';
                     }
                     ?> 
-                                    
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <?php include 'footer.php'; ?>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+<?php include 'footer.php'; ?>

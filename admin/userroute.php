@@ -100,14 +100,13 @@ confirm_logged_in();
                                 
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                <thead>
-                <tr>
-                        <th>Fair</th>
-                        <th>Start</th>
-                        <th>Finish</th>
-                        
-                </tr>
-                </thead>
+                    <thead>
+                        <tr>
+                            <th>Fair</th>
+                            <th>Start</th>
+                            <th>Finish</th>    
+                        </tr>
+                    </thead>
                 <tbody>
                     <?php                  
 $query = 'SELECT * FROM route';

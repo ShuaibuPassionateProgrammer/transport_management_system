@@ -57,7 +57,7 @@ confirm_logged_in();
             <span>HOMEPAGE</span>
           </a>
         </li>
-        
+
         <li class="nav-item">
           <a class="nav-link" href="userbus.php">
             <i class="fas fa-fw fa-bus"></i>
@@ -88,40 +88,36 @@ confirm_logged_in();
       </ul>
 
       <div id="content-wrapper">
-
         <div class="container-fluid">
-
-
           <!-- Breadcrumbs-->
-          
             </li>
-        
            <div class="col-lg-12">
-                                 <div> 
+           <div> 
             <i class="fas fa-table"></i>
-
-            </div>  <br> </br>
+            </div>  
+            
+            <br></br>
                                 
-                        <div class="table-responsive">
-                           <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                                    <tr>
-                                        <th>Fair</th>
-                                        <th>Start</th>
-                                        <th>Finish</th>
-                                        
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                 <?php                  
-                $query = 'SELECT * FROM route';
-                    $result = mysqli_query($db, $query) or die (mysqli_error($db));
-                  
-                        while ($row = mysqli_fetch_assoc($result)) {
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                <tr>
+                        <th>Fair</th>
+                        <th>Start</th>
+                        <th>Finish</th>
+                        
+                </tr>
+                </thead>
+                <tbody>
+                    <?php                  
+$query = 'SELECT * FROM route';
+    $result = mysqli_query($db, $query) or die (mysqli_error($db));
+    
+        while ($row = mysqli_fetch_assoc($result)) {
 
-                           echo '<tr>';
-                           
-                            echo '<td>'. $row['FAIR'].'</td>';
+            echo '<tr>';
+            
+            echo '<td>'. $row['FAIR'].'</td>';
                             echo '<td>'. $row['START'].'</td>';
                             echo '<td>'. $row['FINISH'].'</td>';
                                              

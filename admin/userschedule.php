@@ -43,11 +43,9 @@ confirm_logged_in();
             <a class="dropdown-item" href="register.php">Register</a>
             <a class="dropdown-item" href="#">Sign in</a>
             <a class="dropdown-item" href="logout.php"  data-target="#logoutModal">Logout</a>
-            
           </div>
         </li>
       </ul>
-
     </nav>
 
 

@@ -22,9 +22,7 @@ confirm_logged_in();
     <link href="css/sb-admin.css" rel="stylesheet">
   </head>
   <body id="page-top">
-
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top" style="background-image: linear-gradient(pink,#2144);">
-
       <a class="navbar-brand mr-1" href="index.php">BUS SCHEDULING</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
@@ -32,9 +30,7 @@ confirm_logged_in();
       </button>
 
       <!-- Navbar Search -->
-      <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-        
-      </form>
+      <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0"></form>
 
       <!-- Navbar -->
       <ul class="navbar-nav ml-auto ml-md-0">

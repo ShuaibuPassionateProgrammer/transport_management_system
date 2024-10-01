@@ -119,8 +119,7 @@ confirm_logged_in();
                             echo '<td>'. $row['BUS_ID'].'</td>';    
                             echo '</tr> ';
                         }
-                    ?> 
-                                    
-                                </tbody>
-                            </table>
-                        </div><?php include 'footer.php'; ?>
+                        ?>
+                    </tbody>
+                </table>
+            </div><?php include 'footer.php'; ?>

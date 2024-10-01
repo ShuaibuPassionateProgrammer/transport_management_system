@@ -90,43 +90,36 @@ confirm_logged_in();
       </ul>
 
       <div id="content-wrapper">
-
         <div class="container-fluid">
-
-
-         <div class="col-lg-12">
-                       <div>
+         <div class="col-lg-12"><div>
             <i class="fas fa-table"></i>
-
-            
             </div>    
 
-                        <br> </br>       
-                        <div class="table-responsive">
-                            <table class="table table-bordered table-hover table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Arrival</th>
-                                        <th>Departure</th>
-                                        <th>Bus ID</th>
-                                        
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                 <?php                  
-                $query = 'SELECT * FROM schedule';
-                    $result = mysqli_query($db, $query) or die (mysqli_error($db));
-                  
-                        while ($row = mysqli_fetch_assoc($result)) {
-                                             
+            <br> </br>       
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>Arrival</th>
+                            <th>Departure</th>
+                            <th>Bus ID</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php                  
+                        $query = 'SELECT * FROM schedule';
+                        $result = mysqli_query($db, $query) or die (mysqli_error($db));
+                            
+                        while ($row = mysqli_fetch_assoc($result)) {                    
                             echo '<tr>';
                             echo '<td>'. $row['ARRIVAL'].'</td>';
                             echo '<td>'. $row['DEPARTURE'].'</td>';
-                            echo '<td>'. $row['BUS_ID'].'</td>';
-                            
+                            echo '<td>'. $row['BUS_ID'].'</td>';    
                             echo '</tr> ';
-                }
-            ?> 
+                        }
+                    ?> 
                                     
                                 </tbody>
                             </table>

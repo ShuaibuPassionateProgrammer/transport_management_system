@@ -122,4 +122,5 @@ confirm_logged_in();
                         ?>
                     </tbody>
                 </table>
-            </div><?php include 'footer.php'; ?>
+            </div>
+<?php include 'footer.php'; ?>

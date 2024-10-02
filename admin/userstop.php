@@ -89,9 +89,7 @@ confirm_logged_in();
       </ul>
 
       <div id="content-wrapper">
-
         <div class="container-fluid">
-
            <div class="col-lg-12">
 
             <div>

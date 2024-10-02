@@ -58,17 +58,7 @@ confirm_logged_in();
             <span>HOMEPAGE</span>
           </a>
         </li>
-       <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-fw  fa-cloud"></i>
-            <span>SERVICES</span>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item " href="urns.php">URNS</a> 
-            <a class="dropdown-item " href="caskets.php">CASKETS</a>
-            <a class="dropdown-item " href="vehicles.php">VEHICLES</a>
-          </div>
-        </li>-->
+       
         <li class="nav-item">
           <a class="nav-link" href="userbus.php">
             <i class="fas fa-fw fa-bus"></i>

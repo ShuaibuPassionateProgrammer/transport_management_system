@@ -96,7 +96,7 @@ confirm_logged_in();
             </div>    
 
           <br> </br>
-          
+
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
@@ -108,18 +108,18 @@ confirm_logged_in();
                     </thead>
                     <tbody>
                         <?php                  
-    $query = 'SELECT * FROM stop';
-        $result = mysqli_query($db, $query) or die (mysqli_error($db));
-        
-            while ($row = mysqli_fetch_assoc($result)) {
-                                    
-                echo '<tr>';
-                echo '<td>'. $row['LOCATION_NAME'].'</td>';
-                echo '<td>'. $row['ROUTE_ID'].'</td>';
-                
-                echo '</tr> ';
-    }
-?> 
+                        $query = 'SELECT * FROM stop';
+                        $result = mysqli_query($db, $query) or die (mysqli_error($db));
+                    
+                        while ($row = mysqli_fetch_assoc($result)) {
+                                                
+                            echo '<tr>';
+                            echo '<td>'. $row['LOCATION_NAME'].'</td>';
+                            echo '<td>'. $row['ROUTE_ID'].'</td>';
+                            
+                            echo '</tr> ';
+                        }
+                    ?> 
                                     
                                 </tbody>
                             </table>

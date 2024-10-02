@@ -120,8 +120,8 @@ confirm_logged_in();
                             echo '</tr> ';
                         }
                     ?> 
-                                    
-                                </tbody>
-                            </table>
-                        </div>
+                        
+                    </tbody>
+                </table>
+            </div>
 <?php include 'footer.php'; ?>

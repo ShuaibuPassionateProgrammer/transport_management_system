@@ -26,9 +26,9 @@ include 'topnav.php';?>
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo '<tr>';
                     
-                    echo '<td>#'. $row['FAIR'].'</td>';
-                    echo '<td>'. $row['START'].'</td>';
-                    echo '<td>'. $row['FINISH'].'</td>';
+                    echo '<td>#'. htmlspecialchars($row['FAIR']).'</td>';
+                    echo '<td>'. htmlspecialchars($row['START']).'</td>';
+                    echo '<td>'. htmlspecialchars($row['FINISH']).'</td>';
                                         
                     echo '<td> <a type="button" class="btn btn-xs btn-primary" href="routesearch.php?action=edit & id='.$row['ROUTE_ID'] . '" > SEARCH </a> ';
                     echo ' <a  type="button" class="btn btn-xs btn-warning" href="routeedit.php?action=edit & id='.$row['ROUTE_ID'] . '"> EDIT </a> ';

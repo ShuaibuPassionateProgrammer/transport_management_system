@@ -5,20 +5,30 @@ include 'topnav.php';
 
 <div class="contanier">
     <div class="card card-register mx-auto mt-5">
-    <?php 
-    $query = 'SELECT * FROM driver WHERE DRIVER_ID ='.$_GET['id'];
-    $result = mysqli_query($db, $query) or die(mysqli_error($db));
-    
-    while($row = mysqli_fetch_array($result))
-    {   
-        $did = $row['DRIVER_ID'];
-        $dname = $row['DRIVER_NAME'];
-        $demail = $row['DRIVER_EMAIL'];
-        $dphone = $row['DRIVER_PHONE'];
-        $edate =$row['EMPLOY_DATE'];
+    <?php
+    if (isset($_GET['id']) && is_numeric($_GET['id'])) {
+        $id = $_GET['id'];
+        $query = 'SELECT * FROM driver WHERE DRIVER_ID = ?';
+        $stmt = mysqli_prepare($db, $query);
+        mysqli_stmt_bind_param($stmt, "i", $id);
+        mysqli_stmt_execute($stmt);
+        $result = mysqli_stmt_get_result($stmt);
+        $row = mysqli_fetch_array($result);
+
+        if ($row) {
+            $did = htmlspecialchars($row['DRIVER_ID']);
+            $dname = htmlspecialchars($row['DRIVER_NAME']);
+            $demail = htmlspecialchars($row['DRIVER_EMAIL']);
+            $dphone = htmlspecialchars($row['DRIVER_PHONE']);
+            $edate = htmlspecialchars($row['EMPLOY_DATE']);
+        } else {
+            echo "Driver not found.";
+            exit;
+        }
+    } else {
+        echo "Invalid ID.";
+        exit;
     }
-    
-    $id = $_GET['id'];
     ?>
 
     <div class="col-lg-12 p-4">

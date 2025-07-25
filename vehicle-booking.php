@@ -62,7 +62,7 @@
                             if(mysqli_num_rows($query) > 0) {
                                 while($row = mysqli_fetch_assoc($query)) {
                                     ?>
-                                    <option value="<?php echo $row['BUS_NAME'];?>"><?php echo $row['BUS_NAME'];?></option>
+                                    <option value="<?php echo htmlspecialchars($row['BUS_NAME']);?>"><?php echo htmlspecialchars($row['BUS_NAME']);?></option>
                                     <?php
                                 }
                             }
@@ -83,7 +83,7 @@
                             if(mysqli_num_rows($query) > 0) {
                                 while($row = mysqli_fetch_assoc($query)) {
                                     ?>
-                                    <option value="<?php echo $row['BUS_TYPE'];?>"><?php echo $row['BUS_TYPE'];?></option>
+                                    <option value="<?php echo htmlspecialchars($row['BUS_TYPE']);?>"><?php echo htmlspecialchars($row['BUS_TYPE']);?></option>
                                     <?php
                                 }
                             }
@@ -104,7 +104,7 @@
                             if(mysqli_num_rows($query) > 0) {
                                 while($row = mysqli_fetch_assoc($query)) {
                                     ?>
-                                    <option value="<?php echo $row['FAIR'];?>"><?php echo $row['START'];?> - <?php echo $row['FINISH'];?> #<?php echo $row['FAIR'];?></option>
+                                    <option value="<?php echo htmlspecialchars($row['FAIR']);?>"><?php echo htmlspecialchars($row['START']);?> - <?php echo htmlspecialchars($row['FINISH']);?> #<?php echo htmlspecialchars($row['FAIR']);?></option>
                                     <?php
                                 }
                             }
@@ -126,7 +126,7 @@
                             if(mysqli_num_rows($query) > 0) {
                                 while($row = mysqli_fetch_assoc($query)) {
                                     ?>
-                                    <option value="<?php echo $row['DEPARTURE'];?>"><?php echo $row['DEPARTURE'];?></option>
+                                    <option value="<?php echo htmlspecialchars($row['DEPARTURE']);?>"><?php echo htmlspecialchars($row['DEPARTURE']);?></option>
                                     <?php
                                 }
                             }
@@ -148,7 +148,7 @@
                             if(mysqli_num_rows($query) > 0) {
                                 while($row = mysqli_fetch_assoc($query)) {
                                     ?>
-                                    <option value="<?php echo $row['ARRIVAL'];?>"><?php echo $row['ARRIVAL'];?></option>
+                                    <option value="<?php echo htmlspecialchars($row['ARRIVAL']);?>"><?php echo htmlspecialchars($row['ARRIVAL']);?></option>
                                     <?php
                                 }
                             }
@@ -169,7 +169,7 @@
                             if(mysqli_num_rows($query) > 0) {
                                 while($row = mysqli_fetch_assoc($query)) {
                                     ?>
-                                    <option value="<?php echo $row['LOCATION_NAME'];?>"><?php echo $row['LOCATION_NAME'];?></option>
+                                    <option value="<?php echo htmlspecialchars($row['LOCATION_NAME']);?>"><?php echo htmlspecialchars($row['LOCATION_NAME']);?></option>
                                     <?php
                                 }
                             }

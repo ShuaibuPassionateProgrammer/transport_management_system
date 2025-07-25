@@ -5,21 +5,30 @@ include 'topnav.php';
 
 <div class="contanier">
     <div class="card card-register mx-auto mt-5">
-        <?php 
-        $query = 'SELECT * FROM schedule WHERE SCHEDULE_ID ='.$_GET['id'];
-        $result = mysqli_query($db, $query) or die(mysqli_error($db));
-        
-        while($row = mysqli_fetch_array($result))
-        {   
-            $zz= $row['SCHEDULE_ID'];
-            $i= $row['ARRIVAL'];
-            $a=$row['DEPARTURE'];
-            $b=$row['BUS_ID'];
-        
-        }
-        
+    <?php
+    if (isset($_GET['id']) && is_numeric($_GET['id'])) {
         $id = $_GET['id'];
-        ?>
+        $query = 'SELECT * FROM schedule WHERE SCHEDULE_ID = ?';
+        $stmt = mysqli_prepare($db, $query);
+        mysqli_stmt_bind_param($stmt, "i", $id);
+        mysqli_stmt_execute($stmt);
+        $result = mysqli_stmt_get_result($stmt);
+        $row = mysqli_fetch_array($result);
+
+        if ($row) {
+            $zz = htmlspecialchars($row['SCHEDULE_ID']);
+            $i = htmlspecialchars($row['ARRIVAL']);
+            $a = htmlspecialchars($row['DEPARTURE']);
+            $b = htmlspecialchars($row['BUS_ID']);
+        } else {
+            echo "Schedule not found.";
+            exit;
+        }
+    } else {
+        echo "Invalid ID.";
+        exit;
+    }
+    ?>
             <div class="col-lg-12">
                 <h2>Edit Records</h2>
                 <div class="col-lg-6">
@@ -42,6 +51,5 @@ include 'topnav.php';
                 </div>
             </div>    
         </div>
-        <!-- /.container-fluid -->
     </div>
 <?php include 'footer.php'; ?>

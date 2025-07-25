@@ -6,19 +6,28 @@ include 'topnav.php';
 <div class="contanier">
     <div class="card card-register mx-auto mt-5">
         <?php 
-        $query = 'SELECT * FROM bus WHERE BUS_ID ='.$_GET['id'];
-        $result = mysqli_query($db, $query) or die(mysqli_error($db));
+        if (isset($_GET['id']) && is_numeric($_GET['id'])) {
+            $id = $_GET['id'];
+            $query = 'SELECT * FROM bus WHERE BUS_ID = ?';
+            $stmt = mysqli_prepare($db, $query);
+            mysqli_stmt_bind_param($stmt, "i", $id);
+            mysqli_stmt_execute($stmt);
+            $result = mysqli_stmt_get_result($stmt);
+            $row = mysqli_fetch_array($result);
 
-        while($row = mysqli_fetch_array($result))
-        {   
-            $zz= $row['BUS_ID'];
-            $i= $row['BUS_NAME'];
-            $a=$row['BUS_TYPE'];
-            $b=$row['DRIVER_ID'];
+            if ($row) {
+                $zz = htmlspecialchars($row['BUS_ID']);
+                $i = htmlspecialchars($row['BUS_NAME']);
+                $a = htmlspecialchars($row['BUS_TYPE']);
+                $b = htmlspecialchars($row['DRIVER_ID']);
+            } else {
+                echo "Bus not found.";
+                exit;
+            }
+        } else {
+            echo "Invalid ID.";
+            exit;
         }
-                    
-        $id = $_GET['id'];
-                
         ?>
 
         <div class="col-lg-12" style="box-shadow: rgba(2,2,2,0,2);">

@@ -4,19 +4,28 @@
 
  <div class="col-lg-12">
     <?php
-    $fr= $_POST['FAIR'];
-    $str= $_POST['START'];
-    $fsh= $_POST['FINISH'];
+    $fr = trim($_POST['FAIR']);
+    $str = trim($_POST['START']);
+    $fsh = trim($_POST['FINISH']);
 
-    switch($_GET['action']){
-        case 'add':			
-            $query = "INSERT INTO route (FAIR,START,FINISH) VALUES ('".$fr."','".$str."','".$fsh."')";
-            mysqli_query($db,$query)or die (mysqli_error($db));;
-            break;        
+    if (isset($_GET['action']) && $_GET['action'] == 'add') {
+        if (empty($fr) || empty($str) || empty($fsh)) {
+            echo '<script>alert("All fields are required.");window.history.back();</script>';
+        } else {
+            $query = "INSERT INTO route (FAIR, START, FINISH) VALUES (?, ?, ?)";
+            $stmt = mysqli_prepare($db, $query);
+            mysqli_stmt_bind_param($stmt, "sss", $fr, $str, $fsh);
+
+            if (mysqli_stmt_execute($stmt)) {
+                echo '<script>alert("Successfully added.");window.location = "route.php";</script>';
+            } else {
+                error_log("Error adding route: " . mysqli_error($db));
+                echo '<script>alert("An error occurred. Please try again.");window.history.back();</script>';
+            }
+            mysqli_stmt_close($stmt);
         }
-    ?>
-    <script type="text/javascript">
-        alert("Successfully added.");
-        window.location = "route.php";
-    </script>
+    } else {
+        header("Location: route.php");
+        exit();
+    }
 </div>

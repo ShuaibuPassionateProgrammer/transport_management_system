@@ -3,19 +3,29 @@ include 'topnav.php'; ?>
 
 <div class="contanier">
     <div class="card card-register mx-auto mt-5">
-        <?php 
-        $query = 'SELECT * FROM route WHERE ROUTE_ID ='.$_GET['id'];
-        $result = mysqli_query($db, $query) or die(mysqli_error($db));
+        <?php
+        if (isset($_GET['id']) && is_numeric($_GET['id'])) {
+            $id = $_GET['id'];
+            $query = 'SELECT * FROM route WHERE ROUTE_ID = ?';
+            $stmt = mysqli_prepare($db, $query);
+            mysqli_stmt_bind_param($stmt, "i", $id);
+            mysqli_stmt_execute($stmt);
+            $result = mysqli_stmt_get_result($stmt);
+            $row = mysqli_fetch_array($result);
 
-        while($row = mysqli_fetch_array($result))
-        {   
-            $zz= $row['ROUTE_ID'];
-            $i= $row['FAIR'];
-            $a= $row['START'];
-            $b= $row['FINISH'];
+            if ($row) {
+                $zz = htmlspecialchars($row['ROUTE_ID']);
+                $i = htmlspecialchars($row['FAIR']);
+                $a = htmlspecialchars($row['START']);
+                $b = htmlspecialchars($row['FINISH']);
+            } else {
+                echo "Route not found.";
+                exit;
+            }
+        } else {
+            echo "Invalid ID.";
+            exit;
         }
-                    
-        $id = $_GET['id'];     
         ?>
 
         <div class="col-lg-12 p-4">

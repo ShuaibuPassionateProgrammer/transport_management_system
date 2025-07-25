@@ -1,9 +1,18 @@
-<?php
+<?php 
+session_start();
+include('connection.php');
+
 if(isset($_GET['id'])) {
-    $bid=$_GET['id'];
-    ?>
-<?php session_start();?>
-<?php include('connection.php');?>
+    $bid = filter_var($_GET['id'], FILTER_VALIDATE_INT);
+    if ($bid === false) {
+        header('location: index.php');
+        exit();
+    }
+} else {
+    header('location: index.php');
+    exit();
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +23,10 @@ if(isset($_GET['id'])) {
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- Page level plugin CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Page level plugin CSS-->
     <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 </head>
 <body>
@@ -21,7 +34,7 @@ if(isset($_GET['id'])) {
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card">
-                    <div class="card header text-center p-4 bg-dark text-light"><h2>Thank You</h2></div>
+                    <div class="card-header text-center p-4 bg-dark text-light"><h2>Thank You</h2></div>
                 </div>
             </div>
         </div>
@@ -34,14 +47,15 @@ if(isset($_GET['id'])) {
                 if(isset($_SESSION['bookingstatus']))
                 {
                     ?>
-                    <div class="alert alert-<?php echo $_SESSION['bookingstatus_type']; ?>">
-                        <!-- <strong>Hey </strong> --> <?php echo $_SESSION['bookingstatus']; ?> 
+                    <div class="alert alert-<?php echo htmlspecialchars($_SESSION['bookingstatus_type']); ?>">
+                        <?php echo htmlspecialchars($_SESSION['bookingstatus']); ?> 
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <?php
                     unset($_SESSION['bookingstatus']); 
+                    unset($_SESSION['bookingstatus_type']);
                 }
                 ?>
             </div>
@@ -49,8 +63,11 @@ if(isset($_GET['id'])) {
     </div>
 
     <?php
-    $existing_passenger = "SELECT * FROM booking WHERE id = '$bid'";
-    $existing_passenger_run = mysqli_query($db, $existing_passenger);
+    $existing_passenger = "SELECT * FROM booking WHERE id = ?";
+    $stmt = mysqli_prepare($db, $existing_passenger);
+    mysqli_stmt_bind_param($stmt, "i", $bid);
+    mysqli_stmt_execute($stmt);
+    $existing_passenger_run = mysqli_stmt_get_result($stmt);
 
     if(mysqli_num_rows($existing_passenger_run) > 0) {
         while($row = mysqli_fetch_assoc($existing_passenger_run)) {
@@ -69,10 +86,10 @@ if(isset($_GET['id'])) {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><?=$row['full_name']?></td>
-                                    <td><?=$row['email']?></td>
-                                    <td><?=$row['phone']?></td>
-                                    <td><?=$row['bus_name']?></td>
+                                    <td><?=htmlspecialchars($row['full_name'])?></td>
+                                    <td><?=htmlspecialchars($row['email'])?></td>
+                                    <td><?=htmlspecialchars($row['phone'])?></td>
+                                    <td><?=htmlspecialchars($row['bus_name'])?></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -86,28 +103,13 @@ if(isset($_GET['id'])) {
 
     <div class="container mt-5">
         <div class="row justify-content-center">
-            
-            <div class="col-md-6 text-left mt-4">
-                <table class="table table-bordered">
-                    <tbody>
-                        <tr>
-                            <td class="text-center" colspan="2"><a href="index.php">Back to Homepage</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="col-md-6 text-center mt-4">
+                <a href="index.php" class="btn btn-primary">Back to Homepage</a>
             </div>
         </div>
     </div>
 
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-    <?php
-}
-else {
-    header('location: payment.php?pid='.$pid);
-}
-?>
